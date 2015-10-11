@@ -1,316 +1,316 @@
 /*
- * ‚±‚Ìƒ\[ƒXƒR[ƒh‚Í blanco Framework‚É‚æ‚è©“®¶¬‚³‚ê‚Ü‚µ‚½B
+ * ã“ã®ã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ã¯ blanco Frameworkã«ã‚ˆã‚Šè‡ªå‹•ç”Ÿæˆã•ã‚Œã¾ã—ãŸã€‚
  */
 package blanco.constants.valueobject;
 
 import java.util.List;
 
 /**
- * BlancoConstants‚Ì‚È‚©‚Å—˜—p‚³‚ê‚éValueObject‚Å‚·B
+ * BlancoConstantsã®ãªã‹ã§åˆ©ç”¨ã•ã‚Œã‚‹ValueObjectã§ã™ã€‚
  */
 public class BlancoConstantsStructure {
     /**
-     * ƒtƒB[ƒ‹ƒh [name]
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [name]
      *
-     * €–Ú‚ÌŒ^ [java.lang.String]<br>
-     * ƒtƒB[ƒ‹ƒh–¼‚ğw’è‚µ‚Ü‚·B•K{€–Ú‚Å‚·B
+     * é …ç›®ã®å‹ [java.lang.String]<br>
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰åã‚’æŒ‡å®šã—ã¾ã™ã€‚å¿…é ˆé …ç›®ã§ã™ã€‚
      */
     private String fName;
 
     /**
-     * ƒtƒB[ƒ‹ƒh [package]
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [package]
      *
-     * €–Ú‚ÌŒ^ [java.lang.String]<br>
-     * ƒpƒbƒP[ƒW–¼‚ğw’è‚µ‚Ü‚·B•K{€–Ú‚Å‚·B
+     * é …ç›®ã®å‹ [java.lang.String]<br>
+     * ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸åã‚’æŒ‡å®šã—ã¾ã™ã€‚å¿…é ˆé …ç›®ã§ã™ã€‚
      */
     private String fPackage;
 
     /**
-     * ƒtƒB[ƒ‹ƒh [description]
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [description]
      *
-     * €–Ú‚ÌŒ^ [java.lang.String]<br>
-     * ‚±‚ÌƒoƒŠƒ…[ƒIƒuƒWƒFƒNƒg‚Ìà–¾‚ğ‹LÚ‚µ‚Ü‚·B
+     * é …ç›®ã®å‹ [java.lang.String]<br>
+     * ã“ã®ãƒãƒªãƒ¥ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®èª¬æ˜ã‚’è¨˜è¼‰ã—ã¾ã™ã€‚
      */
     private String fDescription;
 
     /**
-     * ƒtƒB[ƒ‹ƒh [suffix]
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [suffix]
      *
-     * €–Ú‚ÌŒ^ [java.lang.String]<br>
-     * ƒNƒ‰ƒX–¼‚ÌƒTƒtƒBƒbƒNƒX‚ğw’è‚µ‚Ü‚·B
+     * é …ç›®ã®å‹ [java.lang.String]<br>
+     * ã‚¯ãƒ©ã‚¹åã®ã‚µãƒ•ã‚£ãƒƒã‚¯ã‚¹ã‚’æŒ‡å®šã—ã¾ã™ã€‚
      */
     private String fSuffix;
 
     /**
-     * ƒtƒB[ƒ‹ƒh [access]
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [access]
      *
-     * €–Ú‚ÌŒ^ [java.lang.String]<br>
-     * ‹K’è’l   ["public"]<br>
-     * ƒNƒ‰ƒX‚ÌƒAƒNƒZƒXB’Êí‚Í publicB
+     * é …ç›®ã®å‹ [java.lang.String]<br>
+     * è¦å®šå€¤   ["public"]<br>
+     * ã‚¯ãƒ©ã‚¹ã®ã‚¢ã‚¯ã‚»ã‚¹ã€‚é€šå¸¸ã¯ publicã€‚
      */
     private String fAccess = "public";
 
     /**
-     * ƒtƒB[ƒ‹ƒh [abstract]
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [abstract]
      *
-     * €–Ú‚ÌŒ^ [boolean]<br>
-     * ‹K’è’l   [false]<br>
-     * ’ŠÛƒNƒ‰ƒX‚©‚Ç‚¤‚©B’Êí‚Í falseB
+     * é …ç›®ã®å‹ [boolean]<br>
+     * è¦å®šå€¤   [false]<br>
+     * æŠ½è±¡ã‚¯ãƒ©ã‚¹ã‹ã©ã†ã‹ã€‚é€šå¸¸ã¯ falseã€‚
      */
     private boolean fAbstract = false;
 
     /**
-     * ƒtƒB[ƒ‹ƒh [adjustConstValue]
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [adjustConstValue]
      *
-     * €–Ú‚ÌŒ^ [boolean]<br>
-     * ‹K’è’l   [true]<br>
-     * ’è”’l‚Ì•ÏŒ`‚ğ‚¨‚±‚È‚¤‚©‚Ç‚¤‚©B¦‚È‚é‚×‚­•ÏŒ`‚ğ—˜—p‚µ‚È‚¢‚±‚Æ‚ğ„§‚µ‚½‚¢B¦ƒvƒƒOƒ‰ƒ€API‚Æ‚µ‚Ä¶¬‚·‚éÛ‚É‚ÍA‚±‚ÌƒtƒB[ƒ‹ƒh‚ğ–¾¦“I‚Éİ’è‚µ‚Ä‚­‚¾‚³‚¢B
+     * é …ç›®ã®å‹ [boolean]<br>
+     * è¦å®šå€¤   [true]<br>
+     * å®šæ•°å€¤ã®å¤‰å½¢ã‚’ãŠã“ãªã†ã‹ã©ã†ã‹ã€‚â€»ãªã‚‹ã¹ãå¤‰å½¢ã‚’åˆ©ç”¨ã—ãªã„ã“ã¨ã‚’æ¨å¥¨ã—ãŸã„ã€‚â€»ãƒ—ãƒ­ã‚°ãƒ©ãƒ APIã¨ã—ã¦ç”Ÿæˆã™ã‚‹éš›ã«ã¯ã€ã“ã®ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã‚’æ˜ç¤ºçš„ã«è¨­å®šã—ã¦ãã ã•ã„ã€‚
      */
     private boolean fAdjustConstValue = true;
 
     /**
-     * ƒtƒB[ƒ‹ƒh [extends]
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [extends]
      *
-     * €–Ú‚ÌŒ^ [java.lang.String]<br>
-     * Œp³‚·‚éƒNƒ‰ƒX‚ğw’è‚µ‚Ü‚·B
+     * é …ç›®ã®å‹ [java.lang.String]<br>
+     * ç¶™æ‰¿ã™ã‚‹ã‚¯ãƒ©ã‚¹ã‚’æŒ‡å®šã—ã¾ã™ã€‚
      */
     private String fExtends;
 
     /**
-     * ƒtƒB[ƒ‹ƒh [fieldList]
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [fieldList]
      *
-     * €–Ú‚ÌŒ^ [java.util.List<blanco.constants.valueobject.BlancoConstantsFieldStructure>]<br>
-     * ‹K’è’l   [new java.util.ArrayList<blanco.constants.valueobject.BlancoConstantsFieldStructure>()]<br>
-     * ƒtƒB[ƒ‹ƒh‚ğ•Û‚·‚éƒŠƒXƒgB
+     * é …ç›®ã®å‹ [java.util.List<blanco.constants.valueobject.BlancoConstantsFieldStructure>]<br>
+     * è¦å®šå€¤   [new java.util.ArrayList<blanco.constants.valueobject.BlancoConstantsFieldStructure>()]<br>
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã‚’ä¿æŒã™ã‚‹ãƒªã‚¹ãƒˆã€‚
      */
     private List<blanco.constants.valueobject.BlancoConstantsFieldStructure> fFieldList = new java.util.ArrayList<blanco.constants.valueobject.BlancoConstantsFieldStructure>();
 
     /**
-     * ƒtƒB[ƒ‹ƒh [name]‚ÌƒZƒbƒ^[ƒƒ\ƒbƒh
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [name]ã®ã‚»ãƒƒã‚¿ãƒ¼ãƒ¡ã‚½ãƒƒãƒ‰
      *
-     * €–Ú‚ÌŒ^ [java.lang.String]<br>
-     * ƒtƒB[ƒ‹ƒh–¼‚ğw’è‚µ‚Ü‚·B•K{€–Ú‚Å‚·B
+     * é …ç›®ã®å‹ [java.lang.String]<br>
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰åã‚’æŒ‡å®šã—ã¾ã™ã€‚å¿…é ˆé …ç›®ã§ã™ã€‚
      *
-     * @param argName ƒtƒB[ƒ‹ƒh[name]‚ÉŠi”[‚µ‚½‚¢’l
+     * @param argName ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[name]ã«æ ¼ç´ã—ãŸã„å€¤
      */
     public void setName(final String argName) {
         fName = argName;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh[name]‚ÌƒQƒbƒ^[ƒƒ\ƒbƒh
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[name]ã®ã‚²ãƒƒã‚¿ãƒ¼ãƒ¡ã‚½ãƒƒãƒ‰
      *
-     * €–Ú‚ÌŒ^ [java.lang.String]<br>
-     * ƒtƒB[ƒ‹ƒh–¼‚ğw’è‚µ‚Ü‚·B•K{€–Ú‚Å‚·B
+     * é …ç›®ã®å‹ [java.lang.String]<br>
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰åã‚’æŒ‡å®šã—ã¾ã™ã€‚å¿…é ˆé …ç›®ã§ã™ã€‚
      *
-     * @return ƒtƒB[ƒ‹ƒh[name]‚ÉŠi”[‚³‚ê‚Ä‚¢‚é’l
+     * @return ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[name]ã«æ ¼ç´ã•ã‚Œã¦ã„ã‚‹å€¤
      */
     public String getName() {
         return fName;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh [package]‚ÌƒZƒbƒ^[ƒƒ\ƒbƒh
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [package]ã®ã‚»ãƒƒã‚¿ãƒ¼ãƒ¡ã‚½ãƒƒãƒ‰
      *
-     * €–Ú‚ÌŒ^ [java.lang.String]<br>
-     * ƒpƒbƒP[ƒW–¼‚ğw’è‚µ‚Ü‚·B•K{€–Ú‚Å‚·B
+     * é …ç›®ã®å‹ [java.lang.String]<br>
+     * ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸åã‚’æŒ‡å®šã—ã¾ã™ã€‚å¿…é ˆé …ç›®ã§ã™ã€‚
      *
-     * @param argPackage ƒtƒB[ƒ‹ƒh[package]‚ÉŠi”[‚µ‚½‚¢’l
+     * @param argPackage ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[package]ã«æ ¼ç´ã—ãŸã„å€¤
      */
     public void setPackage(final String argPackage) {
         fPackage = argPackage;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh[package]‚ÌƒQƒbƒ^[ƒƒ\ƒbƒh
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[package]ã®ã‚²ãƒƒã‚¿ãƒ¼ãƒ¡ã‚½ãƒƒãƒ‰
      *
-     * €–Ú‚ÌŒ^ [java.lang.String]<br>
-     * ƒpƒbƒP[ƒW–¼‚ğw’è‚µ‚Ü‚·B•K{€–Ú‚Å‚·B
+     * é …ç›®ã®å‹ [java.lang.String]<br>
+     * ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸åã‚’æŒ‡å®šã—ã¾ã™ã€‚å¿…é ˆé …ç›®ã§ã™ã€‚
      *
-     * @return ƒtƒB[ƒ‹ƒh[package]‚ÉŠi”[‚³‚ê‚Ä‚¢‚é’l
+     * @return ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[package]ã«æ ¼ç´ã•ã‚Œã¦ã„ã‚‹å€¤
      */
     public String getPackage() {
         return fPackage;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh [description]‚ÌƒZƒbƒ^[ƒƒ\ƒbƒh
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [description]ã®ã‚»ãƒƒã‚¿ãƒ¼ãƒ¡ã‚½ãƒƒãƒ‰
      *
-     * €–Ú‚ÌŒ^ [java.lang.String]<br>
-     * ‚±‚ÌƒoƒŠƒ…[ƒIƒuƒWƒFƒNƒg‚Ìà–¾‚ğ‹LÚ‚µ‚Ü‚·B
+     * é …ç›®ã®å‹ [java.lang.String]<br>
+     * ã“ã®ãƒãƒªãƒ¥ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®èª¬æ˜ã‚’è¨˜è¼‰ã—ã¾ã™ã€‚
      *
-     * @param argDescription ƒtƒB[ƒ‹ƒh[description]‚ÉŠi”[‚µ‚½‚¢’l
+     * @param argDescription ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[description]ã«æ ¼ç´ã—ãŸã„å€¤
      */
     public void setDescription(final String argDescription) {
         fDescription = argDescription;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh[description]‚ÌƒQƒbƒ^[ƒƒ\ƒbƒh
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[description]ã®ã‚²ãƒƒã‚¿ãƒ¼ãƒ¡ã‚½ãƒƒãƒ‰
      *
-     * €–Ú‚ÌŒ^ [java.lang.String]<br>
-     * ‚±‚ÌƒoƒŠƒ…[ƒIƒuƒWƒFƒNƒg‚Ìà–¾‚ğ‹LÚ‚µ‚Ü‚·B
+     * é …ç›®ã®å‹ [java.lang.String]<br>
+     * ã“ã®ãƒãƒªãƒ¥ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®èª¬æ˜ã‚’è¨˜è¼‰ã—ã¾ã™ã€‚
      *
-     * @return ƒtƒB[ƒ‹ƒh[description]‚ÉŠi”[‚³‚ê‚Ä‚¢‚é’l
+     * @return ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[description]ã«æ ¼ç´ã•ã‚Œã¦ã„ã‚‹å€¤
      */
     public String getDescription() {
         return fDescription;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh [suffix]‚ÌƒZƒbƒ^[ƒƒ\ƒbƒh
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [suffix]ã®ã‚»ãƒƒã‚¿ãƒ¼ãƒ¡ã‚½ãƒƒãƒ‰
      *
-     * €–Ú‚ÌŒ^ [java.lang.String]<br>
-     * ƒNƒ‰ƒX–¼‚ÌƒTƒtƒBƒbƒNƒX‚ğw’è‚µ‚Ü‚·B
+     * é …ç›®ã®å‹ [java.lang.String]<br>
+     * ã‚¯ãƒ©ã‚¹åã®ã‚µãƒ•ã‚£ãƒƒã‚¯ã‚¹ã‚’æŒ‡å®šã—ã¾ã™ã€‚
      *
-     * @param argSuffix ƒtƒB[ƒ‹ƒh[suffix]‚ÉŠi”[‚µ‚½‚¢’l
+     * @param argSuffix ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[suffix]ã«æ ¼ç´ã—ãŸã„å€¤
      */
     public void setSuffix(final String argSuffix) {
         fSuffix = argSuffix;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh[suffix]‚ÌƒQƒbƒ^[ƒƒ\ƒbƒh
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[suffix]ã®ã‚²ãƒƒã‚¿ãƒ¼ãƒ¡ã‚½ãƒƒãƒ‰
      *
-     * €–Ú‚ÌŒ^ [java.lang.String]<br>
-     * ƒNƒ‰ƒX–¼‚ÌƒTƒtƒBƒbƒNƒX‚ğw’è‚µ‚Ü‚·B
+     * é …ç›®ã®å‹ [java.lang.String]<br>
+     * ã‚¯ãƒ©ã‚¹åã®ã‚µãƒ•ã‚£ãƒƒã‚¯ã‚¹ã‚’æŒ‡å®šã—ã¾ã™ã€‚
      *
-     * @return ƒtƒB[ƒ‹ƒh[suffix]‚ÉŠi”[‚³‚ê‚Ä‚¢‚é’l
+     * @return ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[suffix]ã«æ ¼ç´ã•ã‚Œã¦ã„ã‚‹å€¤
      */
     public String getSuffix() {
         return fSuffix;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh [access]‚ÌƒZƒbƒ^[ƒƒ\ƒbƒh
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [access]ã®ã‚»ãƒƒã‚¿ãƒ¼ãƒ¡ã‚½ãƒƒãƒ‰
      *
-     * €–Ú‚ÌŒ^ [java.lang.String]<br>
-     * ƒNƒ‰ƒX‚ÌƒAƒNƒZƒXB’Êí‚Í publicB
+     * é …ç›®ã®å‹ [java.lang.String]<br>
+     * ã‚¯ãƒ©ã‚¹ã®ã‚¢ã‚¯ã‚»ã‚¹ã€‚é€šå¸¸ã¯ publicã€‚
      *
-     * @param argAccess ƒtƒB[ƒ‹ƒh[access]‚ÉŠi”[‚µ‚½‚¢’l
+     * @param argAccess ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[access]ã«æ ¼ç´ã—ãŸã„å€¤
      */
     public void setAccess(final String argAccess) {
         fAccess = argAccess;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh[access]‚ÌƒQƒbƒ^[ƒƒ\ƒbƒh
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[access]ã®ã‚²ãƒƒã‚¿ãƒ¼ãƒ¡ã‚½ãƒƒãƒ‰
      *
-     * €–Ú‚ÌŒ^ [java.lang.String]<br>
-     * ‹K’è’l   ["public"]<br>
-     * ƒNƒ‰ƒX‚ÌƒAƒNƒZƒXB’Êí‚Í publicB
+     * é …ç›®ã®å‹ [java.lang.String]<br>
+     * è¦å®šå€¤   ["public"]<br>
+     * ã‚¯ãƒ©ã‚¹ã®ã‚¢ã‚¯ã‚»ã‚¹ã€‚é€šå¸¸ã¯ publicã€‚
      *
-     * @return ƒtƒB[ƒ‹ƒh[access]‚ÉŠi”[‚³‚ê‚Ä‚¢‚é’l
+     * @return ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[access]ã«æ ¼ç´ã•ã‚Œã¦ã„ã‚‹å€¤
      */
     public String getAccess() {
         return fAccess;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh [abstract]‚ÌƒZƒbƒ^[ƒƒ\ƒbƒh
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [abstract]ã®ã‚»ãƒƒã‚¿ãƒ¼ãƒ¡ã‚½ãƒƒãƒ‰
      *
-     * €–Ú‚ÌŒ^ [boolean]<br>
-     * ’ŠÛƒNƒ‰ƒX‚©‚Ç‚¤‚©B’Êí‚Í falseB
+     * é …ç›®ã®å‹ [boolean]<br>
+     * æŠ½è±¡ã‚¯ãƒ©ã‚¹ã‹ã©ã†ã‹ã€‚é€šå¸¸ã¯ falseã€‚
      *
-     * @param argAbstract ƒtƒB[ƒ‹ƒh[abstract]‚ÉŠi”[‚µ‚½‚¢’l
+     * @param argAbstract ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[abstract]ã«æ ¼ç´ã—ãŸã„å€¤
      */
     public void setAbstract(final boolean argAbstract) {
         fAbstract = argAbstract;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh[abstract]‚ÌƒQƒbƒ^[ƒƒ\ƒbƒh
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[abstract]ã®ã‚²ãƒƒã‚¿ãƒ¼ãƒ¡ã‚½ãƒƒãƒ‰
      *
-     * €–Ú‚ÌŒ^ [boolean]<br>
-     * ‹K’è’l   [false]<br>
-     * ’ŠÛƒNƒ‰ƒX‚©‚Ç‚¤‚©B’Êí‚Í falseB
+     * é …ç›®ã®å‹ [boolean]<br>
+     * è¦å®šå€¤   [false]<br>
+     * æŠ½è±¡ã‚¯ãƒ©ã‚¹ã‹ã©ã†ã‹ã€‚é€šå¸¸ã¯ falseã€‚
      *
-     * @return ƒtƒB[ƒ‹ƒh[abstract]‚ÉŠi”[‚³‚ê‚Ä‚¢‚é’l
+     * @return ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[abstract]ã«æ ¼ç´ã•ã‚Œã¦ã„ã‚‹å€¤
      */
     public boolean getAbstract() {
         return fAbstract;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh [adjustConstValue]‚ÌƒZƒbƒ^[ƒƒ\ƒbƒh
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [adjustConstValue]ã®ã‚»ãƒƒã‚¿ãƒ¼ãƒ¡ã‚½ãƒƒãƒ‰
      *
-     * €–Ú‚ÌŒ^ [boolean]<br>
-     * ’è”’l‚Ì•ÏŒ`‚ğ‚¨‚±‚È‚¤‚©‚Ç‚¤‚©B¦‚È‚é‚×‚­•ÏŒ`‚ğ—˜—p‚µ‚È‚¢‚±‚Æ‚ğ„§‚µ‚½‚¢B¦ƒvƒƒOƒ‰ƒ€API‚Æ‚µ‚Ä¶¬‚·‚éÛ‚É‚ÍA‚±‚ÌƒtƒB[ƒ‹ƒh‚ğ–¾¦“I‚Éİ’è‚µ‚Ä‚­‚¾‚³‚¢B
+     * é …ç›®ã®å‹ [boolean]<br>
+     * å®šæ•°å€¤ã®å¤‰å½¢ã‚’ãŠã“ãªã†ã‹ã©ã†ã‹ã€‚â€»ãªã‚‹ã¹ãå¤‰å½¢ã‚’åˆ©ç”¨ã—ãªã„ã“ã¨ã‚’æ¨å¥¨ã—ãŸã„ã€‚â€»ãƒ—ãƒ­ã‚°ãƒ©ãƒ APIã¨ã—ã¦ç”Ÿæˆã™ã‚‹éš›ã«ã¯ã€ã“ã®ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã‚’æ˜ç¤ºçš„ã«è¨­å®šã—ã¦ãã ã•ã„ã€‚
      *
-     * @param argAdjustConstValue ƒtƒB[ƒ‹ƒh[adjustConstValue]‚ÉŠi”[‚µ‚½‚¢’l
+     * @param argAdjustConstValue ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[adjustConstValue]ã«æ ¼ç´ã—ãŸã„å€¤
      */
     public void setAdjustConstValue(final boolean argAdjustConstValue) {
         fAdjustConstValue = argAdjustConstValue;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh[adjustConstValue]‚ÌƒQƒbƒ^[ƒƒ\ƒbƒh
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[adjustConstValue]ã®ã‚²ãƒƒã‚¿ãƒ¼ãƒ¡ã‚½ãƒƒãƒ‰
      *
-     * €–Ú‚ÌŒ^ [boolean]<br>
-     * ‹K’è’l   [true]<br>
-     * ’è”’l‚Ì•ÏŒ`‚ğ‚¨‚±‚È‚¤‚©‚Ç‚¤‚©B¦‚È‚é‚×‚­•ÏŒ`‚ğ—˜—p‚µ‚È‚¢‚±‚Æ‚ğ„§‚µ‚½‚¢B¦ƒvƒƒOƒ‰ƒ€API‚Æ‚µ‚Ä¶¬‚·‚éÛ‚É‚ÍA‚±‚ÌƒtƒB[ƒ‹ƒh‚ğ–¾¦“I‚Éİ’è‚µ‚Ä‚­‚¾‚³‚¢B
+     * é …ç›®ã®å‹ [boolean]<br>
+     * è¦å®šå€¤   [true]<br>
+     * å®šæ•°å€¤ã®å¤‰å½¢ã‚’ãŠã“ãªã†ã‹ã©ã†ã‹ã€‚â€»ãªã‚‹ã¹ãå¤‰å½¢ã‚’åˆ©ç”¨ã—ãªã„ã“ã¨ã‚’æ¨å¥¨ã—ãŸã„ã€‚â€»ãƒ—ãƒ­ã‚°ãƒ©ãƒ APIã¨ã—ã¦ç”Ÿæˆã™ã‚‹éš›ã«ã¯ã€ã“ã®ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã‚’æ˜ç¤ºçš„ã«è¨­å®šã—ã¦ãã ã•ã„ã€‚
      *
-     * @return ƒtƒB[ƒ‹ƒh[adjustConstValue]‚ÉŠi”[‚³‚ê‚Ä‚¢‚é’l
+     * @return ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[adjustConstValue]ã«æ ¼ç´ã•ã‚Œã¦ã„ã‚‹å€¤
      */
     public boolean getAdjustConstValue() {
         return fAdjustConstValue;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh [extends]‚ÌƒZƒbƒ^[ƒƒ\ƒbƒh
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [extends]ã®ã‚»ãƒƒã‚¿ãƒ¼ãƒ¡ã‚½ãƒƒãƒ‰
      *
-     * €–Ú‚ÌŒ^ [java.lang.String]<br>
-     * Œp³‚·‚éƒNƒ‰ƒX‚ğw’è‚µ‚Ü‚·B
+     * é …ç›®ã®å‹ [java.lang.String]<br>
+     * ç¶™æ‰¿ã™ã‚‹ã‚¯ãƒ©ã‚¹ã‚’æŒ‡å®šã—ã¾ã™ã€‚
      *
-     * @param argExtends ƒtƒB[ƒ‹ƒh[extends]‚ÉŠi”[‚µ‚½‚¢’l
+     * @param argExtends ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[extends]ã«æ ¼ç´ã—ãŸã„å€¤
      */
     public void setExtends(final String argExtends) {
         fExtends = argExtends;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh[extends]‚ÌƒQƒbƒ^[ƒƒ\ƒbƒh
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[extends]ã®ã‚²ãƒƒã‚¿ãƒ¼ãƒ¡ã‚½ãƒƒãƒ‰
      *
-     * €–Ú‚ÌŒ^ [java.lang.String]<br>
-     * Œp³‚·‚éƒNƒ‰ƒX‚ğw’è‚µ‚Ü‚·B
+     * é …ç›®ã®å‹ [java.lang.String]<br>
+     * ç¶™æ‰¿ã™ã‚‹ã‚¯ãƒ©ã‚¹ã‚’æŒ‡å®šã—ã¾ã™ã€‚
      *
-     * @return ƒtƒB[ƒ‹ƒh[extends]‚ÉŠi”[‚³‚ê‚Ä‚¢‚é’l
+     * @return ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[extends]ã«æ ¼ç´ã•ã‚Œã¦ã„ã‚‹å€¤
      */
     public String getExtends() {
         return fExtends;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh [fieldList]‚ÌƒZƒbƒ^[ƒƒ\ƒbƒh
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ [fieldList]ã®ã‚»ãƒƒã‚¿ãƒ¼ãƒ¡ã‚½ãƒƒãƒ‰
      *
-     * €–Ú‚ÌŒ^ [java.util.List<blanco.constants.valueobject.BlancoConstantsFieldStructure>]<br>
-     * ƒtƒB[ƒ‹ƒh‚ğ•Û‚·‚éƒŠƒXƒgB
+     * é …ç›®ã®å‹ [java.util.List<blanco.constants.valueobject.BlancoConstantsFieldStructure>]<br>
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã‚’ä¿æŒã™ã‚‹ãƒªã‚¹ãƒˆã€‚
      *
-     * @param argFieldList ƒtƒB[ƒ‹ƒh[fieldList]‚ÉŠi”[‚µ‚½‚¢’l
+     * @param argFieldList ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[fieldList]ã«æ ¼ç´ã—ãŸã„å€¤
      */
     public void setFieldList(final List<blanco.constants.valueobject.BlancoConstantsFieldStructure> argFieldList) {
         fFieldList = argFieldList;
     }
 
     /**
-     * ƒtƒB[ƒ‹ƒh[fieldList]‚ÌƒQƒbƒ^[ƒƒ\ƒbƒh
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[fieldList]ã®ã‚²ãƒƒã‚¿ãƒ¼ãƒ¡ã‚½ãƒƒãƒ‰
      *
-     * €–Ú‚ÌŒ^ [java.util.List<blanco.constants.valueobject.BlancoConstantsFieldStructure>]<br>
-     * ‹K’è’l   [new java.util.ArrayList<blanco.constants.valueobject.BlancoConstantsFieldStructure>()]<br>
-     * ƒtƒB[ƒ‹ƒh‚ğ•Û‚·‚éƒŠƒXƒgB
+     * é …ç›®ã®å‹ [java.util.List<blanco.constants.valueobject.BlancoConstantsFieldStructure>]<br>
+     * è¦å®šå€¤   [new java.util.ArrayList<blanco.constants.valueobject.BlancoConstantsFieldStructure>()]<br>
+     * ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã‚’ä¿æŒã™ã‚‹ãƒªã‚¹ãƒˆã€‚
      *
-     * @return ƒtƒB[ƒ‹ƒh[fieldList]‚ÉŠi”[‚³‚ê‚Ä‚¢‚é’l
+     * @return ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰[fieldList]ã«æ ¼ç´ã•ã‚Œã¦ã„ã‚‹å€¤
      */
     public List<blanco.constants.valueobject.BlancoConstantsFieldStructure> getFieldList() {
         return fFieldList;
     }
 
     /**
-     * ‚±‚ÌƒoƒŠƒ…[ƒIƒuƒWƒFƒNƒg‚Ì•¶š—ñ•\Œ»‚ğæ“¾‚µ‚Ü‚·B
+     * ã“ã®ãƒãƒªãƒ¥ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®æ–‡å­—åˆ—è¡¨ç¾ã‚’å–å¾—ã—ã¾ã™ã€‚
      *
-     * ƒIƒuƒWƒFƒNƒg‚ÌƒVƒƒƒ[”ÍˆÍ‚Å‚µ‚©toString‚³‚ê‚È‚¢“_‚É’ˆÓ‚µ‚Ä—˜—p‚µ‚Ä‚­‚¾‚³‚¢B
+     * ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®ã‚·ãƒ£ãƒ­ãƒ¼ç¯„å›²ã§ã—ã‹toStringã•ã‚Œãªã„ç‚¹ã«æ³¨æ„ã—ã¦åˆ©ç”¨ã—ã¦ãã ã•ã„ã€‚
      *
-     * @return ƒoƒŠƒ…[ƒIƒuƒWƒFƒNƒg‚Ì•¶š—ñ•\Œ»B
+     * @return ãƒãƒªãƒ¥ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®æ–‡å­—åˆ—è¡¨ç¾ã€‚
      */
     public String toString() {
         final StringBuffer buf = new StringBuffer();

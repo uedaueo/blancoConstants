@@ -1,33 +1,33 @@
 /*
- * ‚±‚Ìƒ\[ƒXƒR[ƒh‚Í blanco Framework‚É‚æ‚è©“®¶¬‚³‚ê‚Ü‚µ‚½B
+ * ã“ã®ã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ã¯ blanco Frameworkã«ã‚ˆã‚Šè‡ªå‹•ç”Ÿæˆã•ã‚Œã¾ã—ãŸã€‚
  */
 package blanco.constants;
 
 /**
- * blancoConstants‚ª—˜—p‚·‚é’è”‚ğ’~‚¦‚Ü‚·B
+ * blancoConstantsãŒåˆ©ç”¨ã™ã‚‹å®šæ•°ã‚’è“„ãˆã¾ã™ã€‚
  */
 public class BlancoConstantsConstants {
     /**
-     * €–Ú”Ô†:1<br>
-     * ƒvƒƒ_ƒNƒg–¼B‰pš‚Åw’è‚µ‚Ü‚·B
+     * é …ç›®ç•ªå·:1<br>
+     * ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆåã€‚è‹±å­—ã§æŒ‡å®šã—ã¾ã™ã€‚
      */
     public static final String PRODUCT_NAME = "blancoConstants";
 
     /**
-     * €–Ú”Ô†:2<br>
-     * ƒvƒƒ_ƒNƒg–¼‚Ì¬•¶š”ÅB‰pš‚Åw’è‚µ‚Ü‚·B
+     * é …ç›®ç•ªå·:2<br>
+     * ãƒ—ãƒ­ãƒ€ã‚¯ãƒˆåã®å°æ–‡å­—ç‰ˆã€‚è‹±å­—ã§æŒ‡å®šã—ã¾ã™ã€‚
      */
     public static final String PRODUCT_NAME_LOWER = "blancoconstants";
 
     /**
-     * €–Ú”Ô†:3<br>
-     * ƒo[ƒWƒ‡ƒ“”Ô†B
+     * é …ç›®ç•ªå·:3<br>
+     * ãƒãƒ¼ã‚¸ãƒ§ãƒ³ç•ªå·ã€‚
      */
     public static final String VERSION = "0.9.3";
 
     /**
-     * €–Ú”Ô†:4<br>
-     * ˆ—‚Ì‰ß’ö‚Å—˜—p‚³‚ê‚éƒTƒuƒfƒBƒŒƒNƒgƒŠB
+     * é …ç›®ç•ªå·:4<br>
+     * å‡¦ç†ã®éç¨‹ã§åˆ©ç”¨ã•ã‚Œã‚‹ã‚µãƒ–ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã€‚
      */
     public static final String TARGET_SUBDIRECTORY = "/constants";
 }

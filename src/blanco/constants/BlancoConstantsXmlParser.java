@@ -23,22 +23,22 @@ import blanco.xml.bind.valueobject.BlancoXmlDocument;
 import blanco.xml.bind.valueobject.BlancoXmlElement;
 
 /**
- * blancoConstants‚Ì ’†ŠÔXMLƒtƒ@ƒCƒ‹Œ`®‚ğƒp[ƒX(“Ç‚İ‘‚«)‚·‚éƒNƒ‰ƒXB
+ * blancoConstantsã® ä¸­é–“XMLãƒ•ã‚¡ã‚¤ãƒ«å½¢å¼ã‚’ãƒ‘ãƒ¼ã‚¹(èª­ã¿æ›¸ã)ã™ã‚‹ã‚¯ãƒ©ã‚¹ã€‚
  * 
  * @author IGA Tosiki
  */
 public class BlancoConstantsXmlParser {
     /**
-     * ƒƒbƒZ[ƒWB
+     * ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã€‚
      */
     private final BlancoConstantsMessage fMsg = new BlancoConstantsMessage();
 
     /**
-     * ’†ŠÔXMLƒtƒ@ƒCƒ‹‚ÌXMLƒhƒLƒ…ƒƒ“ƒg‚ğƒp[ƒX‚µ‚ÄAƒoƒŠƒ…[ƒIƒuƒWƒFƒNƒgî•ñ‚Ì”z—ñ‚ğæ“¾‚µ‚Ü‚·B
+     * ä¸­é–“XMLãƒ•ã‚¡ã‚¤ãƒ«ã®XMLãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆã‚’ãƒ‘ãƒ¼ã‚¹ã—ã¦ã€ãƒãƒªãƒ¥ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆæƒ…å ±ã®é…åˆ—ã‚’å–å¾—ã—ã¾ã™ã€‚
      * 
      * @param argMetaXmlSourceFile
-     *            ’†ŠÔXMLƒtƒ@ƒCƒ‹B
-     * @return ƒp[ƒX‚ÌŒ‹‰Ê“¾‚ç‚ê‚½ƒoƒŠƒ…[ƒIƒuƒWƒFƒNƒgî•ñ‚Ì”z—ñB
+     *            ä¸­é–“XMLãƒ•ã‚¡ã‚¤ãƒ«ã€‚
+     * @return ãƒ‘ãƒ¼ã‚¹ã®çµæœå¾—ã‚‰ã‚ŒãŸãƒãƒªãƒ¥ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆæƒ…å ±ã®é…åˆ—ã€‚
      */
     public BlancoConstantsStructure[] parse(final File argMetaXmlSourceFile) {
         final BlancoXmlDocument documentMeta = new BlancoXmlUnmarshaller()
@@ -52,25 +52,25 @@ public class BlancoConstantsXmlParser {
     }
 
     /**
-     * ’†ŠÔXMLƒtƒ@ƒCƒ‹Œ`®‚ÌXMLƒhƒLƒ…ƒƒ“ƒg‚ğƒp[ƒX‚µ‚ÄAƒoƒŠƒ…[ƒIƒuƒWƒFƒNƒgî•ñ‚Ì”z—ñ‚ğæ“¾‚µ‚Ü‚·B
+     * ä¸­é–“XMLãƒ•ã‚¡ã‚¤ãƒ«å½¢å¼ã®XMLãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆã‚’ãƒ‘ãƒ¼ã‚¹ã—ã¦ã€ãƒãƒªãƒ¥ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆæƒ…å ±ã®é…åˆ—ã‚’å–å¾—ã—ã¾ã™ã€‚
      * 
      * @param argXmlDocument
-     *            ’†ŠÔXMLƒtƒ@ƒCƒ‹‚ÌXMLƒhƒLƒ…ƒƒ“ƒgB
-     * @return ƒp[ƒX‚ÌŒ‹‰Ê“¾‚ç‚ê‚½ƒoƒŠƒ…[ƒIƒuƒWƒFƒNƒgî•ñ‚Ì”z—ñB
+     *            ä¸­é–“XMLãƒ•ã‚¡ã‚¤ãƒ«ã®XMLãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆã€‚
+     * @return ãƒ‘ãƒ¼ã‚¹ã®çµæœå¾—ã‚‰ã‚ŒãŸãƒãƒªãƒ¥ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆæƒ…å ±ã®é…åˆ—ã€‚
      */
     public BlancoConstantsStructure[] parse(
             final BlancoXmlDocument argXmlDocument) {
         final List<BlancoConstantsStructure> listStructure = new ArrayList<BlancoConstantsStructure>();
 
-        // ƒ‹[ƒgƒGƒŒƒƒ“ƒg‚ğæ“¾‚µ‚Ü‚·B
+        // ãƒ«ãƒ¼ãƒˆã‚¨ãƒ¬ãƒ¡ãƒ³ãƒˆã‚’å–å¾—ã—ã¾ã™ã€‚
         final BlancoXmlElement elementRoot = BlancoXmlBindingUtil
                 .getDocumentElement(argXmlDocument);
         if (elementRoot == null) {
-            // ƒ‹[ƒgƒGƒŒƒƒ“ƒg‚ª–³‚¢ê‡‚É‚Íˆ—’†’f‚µ‚Ü‚·B
+            // ãƒ«ãƒ¼ãƒˆã‚¨ãƒ¬ãƒ¡ãƒ³ãƒˆãŒç„¡ã„å ´åˆã«ã¯å‡¦ç†ä¸­æ–­ã—ã¾ã™ã€‚
             return null;
         }
 
-        // sheet(ExcelƒV[ƒg)‚ÌƒŠƒXƒg‚ğæ“¾‚µ‚Ü‚·B
+        // sheet(Excelã‚·ãƒ¼ãƒˆ)ã®ãƒªã‚¹ãƒˆã‚’å–å¾—ã—ã¾ã™ã€‚
         final List<blanco.xml.bind.valueobject.BlancoXmlElement> listSheet = BlancoXmlBindingUtil
                 .getElementsByTagName(elementRoot, "sheet");
 
@@ -80,7 +80,7 @@ public class BlancoConstantsXmlParser {
 
             final BlancoConstantsStructure objClassStructure = parseElementSheet(elementSheet);
             if (objClassStructure != null) {
-                // “¾‚ç‚ê‚½î•ñ‚ğ‹L‰¯‚µ‚Ü‚·B
+                // å¾—ã‚‰ã‚ŒãŸæƒ…å ±ã‚’è¨˜æ†¶ã—ã¾ã™ã€‚
                 listStructure.add(objClassStructure);
             }
         }
@@ -92,11 +92,11 @@ public class BlancoConstantsXmlParser {
     }
 
     /**
-     * ’†ŠÔXMLƒtƒ@ƒCƒ‹Œ`®‚ÌusheetvXMLƒGƒŒƒƒ“ƒg‚ğƒp[ƒX‚µ‚ÄAƒoƒŠƒ…[ƒIƒuƒWƒFƒNƒgî•ñ‚ğæ“¾‚µ‚Ü‚·B
+     * ä¸­é–“XMLãƒ•ã‚¡ã‚¤ãƒ«å½¢å¼ã®ã€Œsheetã€XMLã‚¨ãƒ¬ãƒ¡ãƒ³ãƒˆã‚’ãƒ‘ãƒ¼ã‚¹ã—ã¦ã€ãƒãƒªãƒ¥ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆæƒ…å ±ã‚’å–å¾—ã—ã¾ã™ã€‚
      * 
      * @param argElementSheet
-     *            ’†ŠÔXMLƒtƒ@ƒCƒ‹‚ÌusheetvXMLƒGƒŒƒƒ“ƒgB
-     * @return ƒp[ƒX‚ÌŒ‹‰Ê“¾‚ç‚ê‚½ƒoƒŠƒ…[ƒIƒuƒWƒFƒNƒgî•ñBunamev‚ªŒ©‚Â‚©‚ç‚È‚©‚Á‚½ê‡‚É‚Í null‚ğ–ß‚µ‚Ü‚·B
+     *            ä¸­é–“XMLãƒ•ã‚¡ã‚¤ãƒ«ã®ã€Œsheetã€XMLã‚¨ãƒ¬ãƒ¡ãƒ³ãƒˆã€‚
+     * @return ãƒ‘ãƒ¼ã‚¹ã®çµæœå¾—ã‚‰ã‚ŒãŸãƒãƒªãƒ¥ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆæƒ…å ±ã€‚ã€Œnameã€ãŒè¦‹ã¤ã‹ã‚‰ãªã‹ã£ãŸå ´åˆã«ã¯ nullã‚’æˆ»ã—ã¾ã™ã€‚
      */
     public BlancoConstantsStructure parseElementSheet(
             final BlancoXmlElement argElementSheet) {
@@ -104,7 +104,7 @@ public class BlancoConstantsXmlParser {
         final List<blanco.xml.bind.valueobject.BlancoXmlElement> listCommon = BlancoXmlBindingUtil
                 .getElementsByTagName(argElementSheet, "blancoconstants-common");
         if (listCommon == null || listCommon.size() == 0) {
-            // common‚ª–³‚¢ê‡‚É‚ÍƒXƒLƒbƒv‚µ‚Ü‚·B
+            // commonãŒç„¡ã„å ´åˆã«ã¯ã‚¹ã‚­ãƒƒãƒ—ã—ã¾ã™ã€‚
             return null;
         }
         final BlancoXmlElement elementCommon = listCommon.get(0);
@@ -128,7 +128,7 @@ public class BlancoConstantsXmlParser {
 
         if (BlancoStringUtil.null2Blank(objClassStructure.getName()).trim()
                 .length() == 0) {
-            // –¼‘O‚ª–³‚¢‚à‚Ì‚ÍƒXƒLƒbƒv‚µ‚Ü‚·B
+            // åå‰ãŒç„¡ã„ã‚‚ã®ã¯ã‚¹ã‚­ãƒƒãƒ—ã—ã¾ã™ã€‚
             return null;
         }
 

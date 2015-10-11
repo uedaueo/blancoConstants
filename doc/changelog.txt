@@ -1,67 +1,67 @@
 2008.11.22 (0.9.3)
-  jar�t�@�C���ނ̍X�V�B
+  jarファイル類の更新。
 
 2008.11.21 (0.9.2)
-  �\�[�X�t�@�C���̕����G���R�[�f�B���O�w��@�\��ǉ��B
+  ソースファイルの文字エンコーディング指定機能を追加。
 
 2008.10.24 (0.9.1)
-  JDK 1.5 �Ή��B
+  JDK 1.5 対応。
 
-2007.12.24 (0.8.1) Eclipse 3.3 �΍�
-  ������Ɍ��� plugin�̂݃o�[�W�����ԍ��̔Ԃ̂��������[�X���܂��B
-  (plugin)�o�[�W�����ԍ����̔ԍX�V�B
-  (plugin) workbenchMonitor�𗘗p����̂��~���܂����B
-    ������́AEclipse 3.3 �� workbenchMonitor �𗘗p����� org.eclipse.swt.SWTException: Invalid thread access ���������Ă��܂��̂ŁA���������邽�߂ł��B
-  (plugin)about.html���X�V�B
-  (plugin)build.xml���X�V�B
-  (plugin)plugin.xml�̍Đ���
-  (plugin)�E�B�U�[�h�̐����f�B���N�g���Ɋւ���L�q���X�V (Blanco*WizardPage4)
-  (jar)jar�t�@�C���ނ��X�V�`�F�b�N�B
+2007.12.24 (0.8.1) Eclipse 3.3 対策
+  ※今回に限り pluginのみバージョン番号採番のうえリリースします。
+  (plugin)バージョン番号を採番更新。
+  (plugin) workbenchMonitorを利用するのを停止しました。
+    →これは、Eclipse 3.3 で workbenchMonitor を利用すると org.eclipse.swt.SWTException: Invalid thread access が発生してしまうので、これを避けるためです。
+  (plugin)about.htmlを更新。
+  (plugin)build.xmlを更新。
+  (plugin)plugin.xmlの再生成
+  (plugin)ウィザードの生成ディレクトリに関する記述を更新 (Blanco*WizardPage4)
+  (jar)jarファイル類を更新チェック。
 
 2007.12.07 (0.8.0)
-  ����łƈʒu�Â��B
-  blanco�t�H���_���Đ���
-  (plugin)about.html��ǉ��B
+  安定版と位置づけ。
+  blancoフォルダを再生成
+  (plugin)about.htmlを追加。
 
-2007.12.06 (0.7.0) ������
-  (jar)jar�t�@�C���ނ̍X�V�B
-  (�l��)�t�@�C���̐����t�B�[���h���폜�B
-  BlancoConstantsXmlParser�N���X���쐬�B
-  blancoValueObject (0.9.9) �̒�`���ύX�ɑ��������Ƃ����{�B
-  ��`���ύX�ɑ�������@�\�ǉ������{�B
-  ���b�Z�[�W��`���ɑΉ��B
-  (�폜)todo.txt�t�@�C���̍폜�B
-  (�폜)BlancoConstantsFieldStructureTest.java
-  (�폜)BlancoConstantsStructureTest.java
+2007.12.06 (0.7.0) 実験版
+  (jar)jarファイル類の更新。
+  (様式)ファイルの説明フィールドを削除。
+  BlancoConstantsXmlParserクラスを作成。
+  blancoValueObject (0.9.9) の定義書変更に相当する作業を実施。
+  定義書変更に相当する機能追加を実施。
+  メッセージ定義書に対応。
+  (削除)todo.txtファイルの削除。
+  (削除)BlancoConstantsFieldStructureTest.java
+  (削除)BlancoConstantsStructureTest.java
 
-2006.10.19 (0.6.0) �����
-  �l������
-  �Ereadme�V�[�g�������B
-  �E�u�T�t�B�b�N�X�v��ǉ�
-  �E�u�N���X���v���u�萔��`ID�v �ւƕύX�B�]���l���̌݊����͊m�ہB
-  jar�t�@�C���ނ̍X�V�B
+2006.10.19 (0.6.0) 安定版
+  様式調整
+  ・readmeシートを除去。
+  ・「サフィックス」を追加
+  ・「クラス名」→「定数定義ID」 へと変更。従来様式の互換性は確保。
+  jarファイル類の更新。
 
 2006.07.25 (0.2.0)
-  (jexcelapi)JExcelApi 2.6�� Sun Java2 SE 1.4.2_12 �œ��삵�Ȃ��s��ɑΉ��B
-    (��̓I�ɂ� JExcelApi��jar�t�@�C���Ƀp�b�`��K�p���� jxl-2.6blanco.jar�𗘗p�J�n)
-  jar�t�@�C���ނ��X�V: blancoCg, blancoCommons
+  (jexcelapi)JExcelApi 2.6が Sun Java2 SE 1.4.2_12 で動作しない不具合に対応。
+    (具体的には JExcelApiのjarファイルにパッチを適用した jxl-2.6blanco.jarを利用開始)
+  jarファイル類を更新: blancoCg, blancoCommons
 
 2006.05.10 (0.0.5)
-  (plugin)Eclipse�v���O�C���`����V�K�ɍ쐬�B
-  TODO �萔��`���ꗗ�쐬�@�\�̎����B
-  jar�t�@�C���ނ̍X�V�B
+  (plugin)Eclipseプラグイン形式を新規に作成。
+  TODO 定数定義書一覧作成機能の実装。
+  jarファイル類の更新。
 
 2006.03.21 (0.0.4)
-  jar�t�@�C���ނ��X�V�B
-  JavaDoc���������B
+  jarファイル類を更新。
+  JavaDocを見直し。
 
 2006.02.14 (0.0.3)
-  jar�t�@�C���ނ��X�V�B
-  readme.txt�������������P�B
+  jarファイル類を更新。
+  readme.txtを少しだけ改善。
 
 2006.01.27 (0.0.2)
-  jar�t�@�C�����X�V�B
-  ���{�ꕶ��������\�[�X�o���h����
+  jarファイルを更新。
+  日本語文字列をリソースバンドル化
 
 2006.01.23 (0.0.1)
-  �V�K�쐬
+  新規作成

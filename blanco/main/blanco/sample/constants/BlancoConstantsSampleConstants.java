@@ -1,5 +1,5 @@
 /*
- * ‚±‚Ìƒ\[ƒXƒR[ƒh‚Í blanco Framework‚É‚æ‚è©“®¶¬‚³‚ê‚Ü‚µ‚½B
+ * ã“ã®ã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ã¯ blanco Frameworkã«ã‚ˆã‚Šè‡ªå‹•ç”Ÿæˆã•ã‚Œã¾ã—ãŸã€‚
  */
 package blanco.sample.constants;
 
@@ -7,63 +7,63 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 
 /**
- * ƒTƒ“ƒvƒ‹‚Ì’è”’è‹`
+ * ã‚µãƒ³ãƒ—ãƒ«ã®å®šæ•°å®šç¾©
  */
 public class BlancoConstantsSampleConstants {
     /**
-     * €–Ú”Ô†:1<br>
-     * •¶š‚ÌƒtƒB[ƒ‹ƒh
+     * é …ç›®ç•ªå·:1<br>
+     * æ–‡å­—ã®ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰
      */
     public static final String STRING_FIELD = "123";
 
     /**
-     * €–Ú”Ô†:2<br>
+     * é …ç›®ç•ªå·:2<br>
      */
     public static final boolean BOOLEAN_FIELD = false;
 
     /**
-     * €–Ú”Ô†:3<br>
+     * é …ç›®ç•ªå·:3<br>
      */
     public static final Boolean BOOLEAN_OBJ_FIELD = new Boolean(true);
 
     /**
-     * €–Ú”Ô†:4<br>
+     * é …ç›®ç•ªå·:4<br>
      */
     public static final short SHORT_FIELD = 123;
 
     /**
-     * €–Ú”Ô†:5<br>
+     * é …ç›®ç•ªå·:5<br>
      */
     public static final Short SHORT_OBJ_FIELD = new Short((short) 123);
 
     /**
-     * €–Ú”Ô†:6<br>
+     * é …ç›®ç•ªå·:6<br>
      */
     public static final int INT_FIELD = 123;
 
     /**
-     * €–Ú”Ô†:7<br>
+     * é …ç›®ç•ªå·:7<br>
      */
     public static final Integer INT_OBJ_FIELD = new Integer(123);
 
     /**
-     * €–Ú”Ô†:8<br>
+     * é …ç›®ç•ªå·:8<br>
      */
     public static final long LONG_FIELD = 123;
 
     /**
-     * €–Ú”Ô†:9<br>
+     * é …ç›®ç•ªå·:9<br>
      */
     public static final Long LONG_OBJ_FIELD = new Long(123);
 
     /**
-     * €–Ú”Ô†:10<br>
+     * é …ç›®ç•ªå·:10<br>
      */
     public static final BigDecimal BIGDECIMAL_FIELD = new BigDecimal("123.456");
 
     /**
-     * €–Ú”Ô†:11<br>
-     * ArrayList‚ÌƒtƒB[ƒ‹ƒh
+     * é …ç›®ç•ªå·:11<br>
+     * ArrayListã®ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰
      */
     public static final ArrayList ARRAYLIST_FIELD = new ArrayList();
 }

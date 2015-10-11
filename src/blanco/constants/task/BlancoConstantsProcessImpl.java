@@ -13,7 +13,7 @@ import blanco.constants.task.valueobject.BlancoConstantsProcessInput;
 
 public class BlancoConstantsProcessImpl implements BlancoConstantsProcess {
     /**
-     * ƒƒbƒZ[ƒWB
+     * ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã€‚
      */
     private final BlancoConstantsMessage fMsg = new BlancoConstantsMessage();
 
@@ -29,17 +29,17 @@ public class BlancoConstantsProcessImpl implements BlancoConstantsProcess {
                         .getMetadir()));
             }
 
-            // ƒeƒ“ƒ|ƒ‰ƒŠƒfƒBƒŒƒNƒgƒŠ‚ğì¬B
+            // ãƒ†ãƒ³ãƒãƒ©ãƒªãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã‚’ä½œæˆã€‚
             new File(input.getTmpdir()
                     + BlancoConstantsConstants.TARGET_SUBDIRECTORY).mkdirs();
 
-            // w’è‚³‚ê‚½ƒƒ^ƒfƒBƒŒƒNƒgƒŠ‚ğˆ—‚µ‚Ü‚·B
+            // æŒ‡å®šã•ã‚ŒãŸãƒ¡ã‚¿ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã‚’å‡¦ç†ã—ã¾ã™ã€‚
             new BlancoConstantsMeta2Xml().processDirectory(fileMetadir, input
                     .getTmpdir()
                     + BlancoConstantsConstants.TARGET_SUBDIRECTORY);
 
-            // XML‰»‚³‚ê‚½ƒƒ^ƒtƒ@ƒCƒ‹‚©‚çValueObject‚ğ¶¬
-            // Å‰‚Éƒeƒ“ƒ|ƒ‰ƒŠƒtƒHƒ‹ƒ_‚ğ‘–¸
+            // XMLåŒ–ã•ã‚ŒãŸãƒ¡ã‚¿ãƒ•ã‚¡ã‚¤ãƒ«ã‹ã‚‰ValueObjectã‚’ç”Ÿæˆ
+            // æœ€åˆã«ãƒ†ãƒ³ãƒãƒ©ãƒªãƒ•ã‚©ãƒ«ãƒ€ã‚’èµ°æŸ»
             final File[] fileMeta2 = new File(input.getTmpdir()
                     + BlancoConstantsConstants.TARGET_SUBDIRECTORY).listFiles();
             for (int index = 0; index < fileMeta2.length; index++) {
@@ -55,7 +55,7 @@ public class BlancoConstantsProcessImpl implements BlancoConstantsProcess {
 
             return BlancoConstantsBatchProcess.END_SUCCESS;
         } catch (TransformerException e) {
-            throw new IOException("XML•ÏŠ·‚Ì‰ß’ö‚Å—áŠO‚ª”­¶‚µ‚Ü‚µ‚½: " + e.toString());
+            throw new IOException("XMLå¤‰æ›ã®éç¨‹ã§ä¾‹å¤–ãŒç™ºç”Ÿã—ã¾ã—ãŸ: " + e.toString());
         }
     }
 }

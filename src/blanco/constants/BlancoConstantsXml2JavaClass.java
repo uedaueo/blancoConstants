@@ -26,40 +26,40 @@ import blanco.constants.valueobject.BlancoConstantsFieldStructure;
 import blanco.constants.valueobject.BlancoConstantsStructure;
 
 /**
- * ’†ŠÔXMLƒtƒ@ƒCƒ‹‚©‚çJavaƒ\[ƒXƒR[ƒh‚ğ©“®¶¬‚·‚éƒNƒ‰ƒX‚Å‚·B
+ * ä¸­é–“XMLãƒ•ã‚¡ã‚¤ãƒ«ã‹ã‚‰Javaã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ã‚’è‡ªå‹•ç”Ÿæˆã™ã‚‹ã‚¯ãƒ©ã‚¹ã§ã™ã€‚
  * 
- * ’è”’è‹`‘(XLS)‚©‚çƒ\[ƒXƒR[ƒh‚ğ©“®¶¬‚·‚éƒvƒƒWƒFƒNƒg‚Ìˆê•”‚Å‚·B
+ * å®šæ•°å®šç¾©æ›¸(XLS)ã‹ã‚‰ã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ã‚’è‡ªå‹•ç”Ÿæˆã™ã‚‹ãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã®ä¸€éƒ¨ã§ã™ã€‚
  * 
  * @author IGA Tosiki
  */
 public class BlancoConstantsXml2JavaClass {
     /**
-     * ƒƒbƒZ[ƒWB
+     * ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã€‚
      */
     private final BlancoConstantsMessage fMsg = new BlancoConstantsMessage();
 
     /**
-     * ƒŠƒ\[ƒXƒoƒ“ƒhƒ‹‚Ö‚ÌƒAƒNƒZƒTƒNƒ‰ƒX‚ÌƒIƒuƒWƒFƒNƒgB
+     * ãƒªã‚½ãƒ¼ã‚¹ãƒãƒ³ãƒ‰ãƒ«ã¸ã®ã‚¢ã‚¯ã‚»ã‚µã‚¯ãƒ©ã‚¹ã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã€‚
      */
     private final BlancoConstantsResourceBundle fBundle = new BlancoConstantsResourceBundle();
 
     /**
-     * “à•”“I‚É—˜—p‚·‚éblancoCg—pƒtƒ@ƒNƒgƒŠB
+     * å†…éƒ¨çš„ã«åˆ©ç”¨ã™ã‚‹blancoCgç”¨ãƒ•ã‚¡ã‚¯ãƒˆãƒªã€‚
      */
     private BlancoCgObjectFactory fCgFactory = null;
 
     /**
-     * “à•”“I‚É—˜—p‚·‚éblancoCg—pƒ\[ƒXƒtƒ@ƒCƒ‹î•ñB
+     * å†…éƒ¨çš„ã«åˆ©ç”¨ã™ã‚‹blancoCgç”¨ã‚½ãƒ¼ã‚¹ãƒ•ã‚¡ã‚¤ãƒ«æƒ…å ±ã€‚
      */
     private BlancoCgSourceFile fCgSourceFile = null;
 
     /**
-     * “à•”“I‚É—˜—p‚·‚éblancoCg—pƒNƒ‰ƒXî•ñB
+     * å†…éƒ¨çš„ã«åˆ©ç”¨ã™ã‚‹blancoCgç”¨ã‚¯ãƒ©ã‚¹æƒ…å ±ã€‚
      */
     private BlancoCgClass fCgClass = null;
 
     /**
-     * ©“®¶¬‚·‚éƒ\[ƒXƒtƒ@ƒCƒ‹‚Ì•¶šƒGƒ“ƒR[ƒfƒBƒ“ƒOB
+     * è‡ªå‹•ç”Ÿæˆã™ã‚‹ã‚½ãƒ¼ã‚¹ãƒ•ã‚¡ã‚¤ãƒ«ã®æ–‡å­—ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‡ã‚£ãƒ³ã‚°ã€‚
      */
     private String fEncoding = null;
 
@@ -68,38 +68,38 @@ public class BlancoConstantsXml2JavaClass {
     }
 
     /**
-     * ’†ŠÔXMLƒtƒ@ƒCƒ‹‚©‚çJavaƒ\[ƒXƒR[ƒh‚ğ©“®¶¬‚µ‚Ü‚·B
+     * ä¸­é–“XMLãƒ•ã‚¡ã‚¤ãƒ«ã‹ã‚‰Javaã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ã‚’è‡ªå‹•ç”Ÿæˆã—ã¾ã™ã€‚
      * 
      * @param argMetaXmlSourceFile
-     *            ValueObject‚ÉŠÖ‚·‚éƒƒ^î•ñ‚ªŠÜ‚Ü‚ê‚Ä‚¢‚éXMLƒtƒ@ƒCƒ‹
+     *            ValueObjectã«é–¢ã™ã‚‹ãƒ¡ã‚¿æƒ…å ±ãŒå«ã¾ã‚Œã¦ã„ã‚‹XMLãƒ•ã‚¡ã‚¤ãƒ«
      * @param argDirectoryTarget
-     *            ƒ\[ƒXƒR[ƒh¶¬æƒfƒBƒŒƒNƒgƒŠ
+     *            ã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ç”Ÿæˆå…ˆãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒª
      * @throws IOException
-     *             “üo—Í—áŠO‚ª”­¶‚µ‚½ê‡
+     *             å…¥å‡ºåŠ›ä¾‹å¤–ãŒç™ºç”Ÿã—ãŸå ´åˆ
      */
     public void process(final File argMetaXmlSourceFile,
             final File argDirectoryTarget) throws IOException {
         final BlancoConstantsStructure[] structures = new BlancoConstantsXmlParser()
                 .parse(argMetaXmlSourceFile);
         for (int index = 0; index < structures.length; index++) {
-            // “¾‚ç‚ê‚½î•ñ‚©‚çJavaƒ\[ƒXƒR[ƒh‚ğ¶¬‚µ‚Ü‚·B
+            // å¾—ã‚‰ã‚ŒãŸæƒ…å ±ã‹ã‚‰Javaã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ã‚’ç”Ÿæˆã—ã¾ã™ã€‚
             structure2Source(structures[index], argDirectoryTarget);
         }
     }
 
     /**
-     * ûW‚³‚ê‚½î•ñ‚ğŒ³‚ÉAJavaƒ\[ƒXƒR[ƒh‚ğo—Í‚µ‚Ü‚·B
+     * åé›†ã•ã‚ŒãŸæƒ…å ±ã‚’å…ƒã«ã€Javaã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ã‚’å‡ºåŠ›ã—ã¾ã™ã€‚
      * 
      * @param processStructure
-     *            ˆ—\‘¢
+     *            å‡¦ç†æ§‹é€ 
      * @param directoryTarget
-     *            o—ÍæƒtƒHƒ‹ƒ_B
+     *            å‡ºåŠ›å…ˆãƒ•ã‚©ãƒ«ãƒ€ã€‚
      */
     public void structure2Source(
             final BlancoConstantsStructure processStructure,
             final File directoryTarget) {
 
-        // ]—ˆ‚ÆŒİŠ·«‚ğ‚½‚¹‚é‚½‚ßA/mainƒTƒuƒtƒHƒ‹ƒ_‚Éo—Í‚µ‚Ü‚·B
+        // å¾“æ¥ã¨äº’æ›æ€§ã‚’æŒãŸã›ã‚‹ãŸã‚ã€/mainã‚µãƒ–ãƒ•ã‚©ãƒ«ãƒ€ã«å‡ºåŠ›ã—ã¾ã™ã€‚
         final File fileBlancoMain = new File(directoryTarget.getAbsolutePath()
                 + "/main");
 
@@ -112,12 +112,12 @@ public class BlancoConstantsXml2JavaClass {
                 BlancoStringUtil.null2Blank(processStructure.getDescription()));
         fCgSourceFile.getClassList().add(fCgClass);
 
-        // ƒNƒ‰ƒX‚ÌƒAƒNƒZƒX‚ğİ’èB
+        // ã‚¯ãƒ©ã‚¹ã®ã‚¢ã‚¯ã‚»ã‚¹ã‚’è¨­å®šã€‚
         fCgClass.setAccess(processStructure.getAccess());
-        // ’ŠÛƒNƒ‰ƒX‚©‚Ç‚¤‚©B
+        // æŠ½è±¡ã‚¯ãƒ©ã‚¹ã‹ã©ã†ã‹ã€‚
         fCgClass.setAbstract(processStructure.getAbstract());
 
-        // Œp³
+        // ç¶™æ‰¿
         if (BlancoStringUtil.null2Blank(processStructure.getExtends()).length() > 0) {
             fCgClass.getExtendClassList().add(
                     fCgFactory.createType(processStructure.getExtends()));
@@ -145,11 +145,11 @@ public class BlancoConstantsXml2JavaClass {
             }
 
             if (processStructure.getAdjustConstValue() == false) {
-                // ‚»‚Ì‚Ü‚Ü‘ã“ü‚µ‚Ü‚·B
+                // ãã®ã¾ã¾ä»£å…¥ã—ã¾ã™ã€‚
                 field.setDefault(fieldLook.getValue());
             } else {
-                // Œ^‚É‚æ‚Á‚ÄƒfƒtƒHƒ‹ƒg’l‚ğ‘‚«•ª‚¯‚Ü‚·B
-                // ‘Î‰‚µ‚È‚¢Œ^‚ª—^‚¦‚ç‚ê‚½ê‡‚É‚Í—áŠO‚ğ”­¶‚µ‚Ü‚·B
+                // å‹ã«ã‚ˆã£ã¦ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆå€¤ã‚’æ›¸ãåˆ†ã‘ã¾ã™ã€‚
+                // å¯¾å¿œã—ãªã„å‹ãŒä¸ãˆã‚‰ã‚ŒãŸå ´åˆã«ã¯ä¾‹å¤–ã‚’ç™ºç”Ÿã—ã¾ã™ã€‚
                 if (fieldLook.getType().equals("java.lang.String")) {
                     field.setDefault("\""
                             + BlancoJavaSourceUtil
@@ -177,7 +177,7 @@ public class BlancoConstantsXml2JavaClass {
                     field.setDefault("new BigDecimal(\"" + fieldLook.getValue()
                             + "\")");
                 } else if (fieldLook.getType().equals("java.util.ArrayList")) {
-                    // ArrayList‚Ìê‡‚É‚ÍA—^‚¦‚ç‚ê‚½•¶š‚ğ‚»‚Ì‚Ü‚ÜÌ—p‚µ‚Ü‚·B
+                    // ArrayListã®å ´åˆã«ã¯ã€ä¸ãˆã‚‰ã‚ŒãŸæ–‡å­—ã‚’ãã®ã¾ã¾æ¡ç”¨ã—ã¾ã™ã€‚
                     fCgSourceFile.getImportList().add("java.util.ArrayList");
                     field.setDefault(fieldLook.getValue());
                 } else {

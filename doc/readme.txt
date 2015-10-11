@@ -1,26 +1,26 @@
-blancoConstants�� �u�萔��`���v�Ƃ���Excel�l�����L�����邾���� �ȒP�� �萔��Java�N���X���쐬�ł���悤�ɂ��邽�߂̃c�[���ł��B
-��������ƁA�h�L�������g�ƃ\�[�X�R�[�h���K����v����Ƃ������ʂ�����܂��B
+blancoConstantsは 「定数定義書」というExcel様式を記入するだけで 簡単に 定数のJavaクラスが作成できるようにするためのツールです。
+導入すると、ドキュメントとソースコードが必ず一致するという効果があります。
 
-[�J����]
- 1.�ɉ�q�� (Tosiki Iga / �����҂��): �J������шێ������e�S��
- 2.�R�{�k�i (ymoto) : �d�l���肨��у����[�X����S��
+[開発者]
+ 1.伊賀敏樹 (Tosiki Iga / いがぴょん): 開発および維持メンテ担当
+ 2.山本耕司 (ymoto) : 仕様決定およびリリース判定担当
 
-[���C�Z���X]
- 1.blancoConstants �� ���C�Z���X �Ƃ��� GNU Lesser General Public License ���̗p���Ă��܂��B
+[ライセンス]
+ 1.blancoConstants は ライセンス として GNU Lesser General Public License を採用しています。
 
-[�ˑ����郉�C�u����]
-blancoConstants�͉��L�̃��C�u�����𗘗p���Ă��܂��B
-���e�I�[�v���\�[�X�E�v���_�N�g�̒񋟎҂Ɋ��ӂ��܂��B
+[依存するライブラリ]
+blancoConstantsは下記のライブラリを利用しています。
+※各オープンソース・プロダクトの提供者に感謝します。
  1.JExcelApi - Java Excel API - A Java API to read, write and modify Excel spreadsheets
      http://jexcelapi.sourceforge.net/
      http://sourceforge.net/projects/jexcelapi/
      http://www.andykhan.com/jexcelapi/ 
-   �T�v: Java����Excel�u�b�N�`����ǂݏ������邽�߂̃��C�u�����ł��B
-   ���C�Z���X: GNU Lesser General Public License
+   概要: JavaからExcelブック形式を読み書きするためのライブラリです。
+   ライセンス: GNU Lesser General Public License
  2.blancoCodeGenerator
-   �T�v: �\�[�X�R�[�h�������C�u����
-   ���C�Z���X: GNU Lesser General Public License
+   概要: ソースコード生成ライブラリ
+   ライセンス: GNU Lesser General Public License
  3.blancoCommons
-   �T�v: blanco Framework���ʃ��C�u����
-         ���^���t�@�C����ǂݍ��ލۂɗ��p���Ă��܂��B
-   ���C�Z���X: GNU Lesser General Public License
+   概要: blanco Framework共通ライブラリ
+         メタ情報ファイルを読み込む際に利用しています。
+   ライセンス: GNU Lesser General Public License
