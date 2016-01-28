@@ -1,3 +1,7 @@
+2016.01.28 (2.0.1)
+  Change version number.
+  JExcelApiからApache POIに変更(.xlsxを読めるように修正)
+
 2008.11.22 (0.9.3)
   jarファイル類の更新。
 
