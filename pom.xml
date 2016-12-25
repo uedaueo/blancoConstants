@@ -114,6 +114,12 @@
 						</goals>
 					</execution>
 				</executions>
+				<configuration>
+					<excludes>
+						<exclude>blanco/sample/</exclude>
+						<exclude>blanco/sample/**/*</exclude>
+					</excludes>
+				</configuration>
 			</plugin>
 
 			<!-- copy jar files into lib directory. -->
