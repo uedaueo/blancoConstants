@@ -1,12 +1,11 @@
 /blancoConstants-*-src.zip
 /bin/
+/classes/
 .svn
 .classpath
 .project
 .idea
-.DS_Store
-/tmp
-/blanco/main
-/blanco.php/main
-/classes
 *.iml
+.DS_Store
+/tmp/
+/target/
