@@ -10,296 +10,269 @@ import java.util.List;
  */
 public class BlancoConstantsStructure {
     /**
-     * フィールド [name]
-     *
-     * 項目の型 [java.lang.String]<br>
      * フィールド名を指定します。必須項目です。
+     *
+     * フィールド: [name]。
      */
     private String fName;
 
     /**
-     * フィールド [package]
-     *
-     * 項目の型 [java.lang.String]<br>
      * パッケージ名を指定します。必須項目です。
+     *
+     * フィールド: [package]。
      */
     private String fPackage;
 
     /**
-     * フィールド [description]
-     *
-     * 項目の型 [java.lang.String]<br>
      * このバリューオブジェクトの説明を記載します。
+     *
+     * フィールド: [description]。
      */
     private String fDescription;
 
     /**
-     * フィールド [suffix]
-     *
-     * 項目の型 [java.lang.String]<br>
      * クラス名のサフィックスを指定します。
+     *
+     * フィールド: [suffix]。
      */
     private String fSuffix;
 
     /**
-     * フィールド [access]
-     *
-     * 項目の型 [java.lang.String]<br>
-     * 規定値   ["public"]<br>
      * クラスのアクセス。通常は public。
+     *
+     * フィールド: [access]。
+     * デフォルト: ["public"]。
      */
     private String fAccess = "public";
 
     /**
-     * フィールド [abstract]
-     *
-     * 項目の型 [boolean]<br>
-     * 規定値   [false]<br>
      * 抽象クラスかどうか。通常は false。
+     *
+     * フィールド: [abstract]。
+     * デフォルト: [false]。
      */
     private boolean fAbstract = false;
 
     /**
-     * フィールド [adjustConstValue]
-     *
-     * 項目の型 [boolean]<br>
-     * 規定値   [true]<br>
      * 定数値の変形をおこなうかどうか。※なるべく変形を利用しないことを推奨したい。※プログラムAPIとして生成する際には、このフィールドを明示的に設定してください。
+     *
+     * フィールド: [adjustConstValue]。
+     * デフォルト: [true]。
      */
     private boolean fAdjustConstValue = true;
 
     /**
-     * フィールド [extends]
-     *
-     * 項目の型 [java.lang.String]<br>
      * 継承するクラスを指定します。
+     *
+     * フィールド: [extends]。
      */
     private String fExtends;
 
     /**
-     * フィールド [fieldList]
-     *
-     * 項目の型 [java.util.List<blanco.constants.valueobject.BlancoConstantsFieldStructure>]<br>
-     * 規定値   [new java.util.ArrayList<blanco.constants.valueobject.BlancoConstantsFieldStructure>()]<br>
      * フィールドを保持するリスト。
+     *
+     * フィールド: [fieldList]。
+     * デフォルト: [new java.util.ArrayList<blanco.constants.valueobject.BlancoConstantsFieldStructure>()]。
      */
     private List<blanco.constants.valueobject.BlancoConstantsFieldStructure> fFieldList = new java.util.ArrayList<blanco.constants.valueobject.BlancoConstantsFieldStructure>();
 
     /**
-     * フィールド [name]のセッターメソッド
+     * フィールド [name] の値を設定します。
      *
-     * 項目の型 [java.lang.String]<br>
-     * フィールド名を指定します。必須項目です。
+     * フィールドの説明: [フィールド名を指定します。必須項目です。]。
      *
-     * @param argName フィールド[name]に格納したい値
+     * @param argName フィールド[name]に設定する値。
      */
     public void setName(final String argName) {
         fName = argName;
     }
 
     /**
-     * フィールド[name]のゲッターメソッド
+     * フィールド [name] の値を取得します。
      *
-     * 項目の型 [java.lang.String]<br>
-     * フィールド名を指定します。必須項目です。
+     * フィールドの説明: [フィールド名を指定します。必須項目です。]。
      *
-     * @return フィールド[name]に格納されている値
+     * @return フィールド[name]から取得した値。
      */
     public String getName() {
         return fName;
     }
 
     /**
-     * フィールド [package]のセッターメソッド
+     * フィールド [package] の値を設定します。
      *
-     * 項目の型 [java.lang.String]<br>
-     * パッケージ名を指定します。必須項目です。
+     * フィールドの説明: [パッケージ名を指定します。必須項目です。]。
      *
-     * @param argPackage フィールド[package]に格納したい値
+     * @param argPackage フィールド[package]に設定する値。
      */
     public void setPackage(final String argPackage) {
         fPackage = argPackage;
     }
 
     /**
-     * フィールド[package]のゲッターメソッド
+     * フィールド [package] の値を取得します。
      *
-     * 項目の型 [java.lang.String]<br>
-     * パッケージ名を指定します。必須項目です。
+     * フィールドの説明: [パッケージ名を指定します。必須項目です。]。
      *
-     * @return フィールド[package]に格納されている値
+     * @return フィールド[package]から取得した値。
      */
     public String getPackage() {
         return fPackage;
     }
 
     /**
-     * フィールド [description]のセッターメソッド
+     * フィールド [description] の値を設定します。
      *
-     * 項目の型 [java.lang.String]<br>
-     * このバリューオブジェクトの説明を記載します。
+     * フィールドの説明: [このバリューオブジェクトの説明を記載します。]。
      *
-     * @param argDescription フィールド[description]に格納したい値
+     * @param argDescription フィールド[description]に設定する値。
      */
     public void setDescription(final String argDescription) {
         fDescription = argDescription;
     }
 
     /**
-     * フィールド[description]のゲッターメソッド
+     * フィールド [description] の値を取得します。
      *
-     * 項目の型 [java.lang.String]<br>
-     * このバリューオブジェクトの説明を記載します。
+     * フィールドの説明: [このバリューオブジェクトの説明を記載します。]。
      *
-     * @return フィールド[description]に格納されている値
+     * @return フィールド[description]から取得した値。
      */
     public String getDescription() {
         return fDescription;
     }
 
     /**
-     * フィールド [suffix]のセッターメソッド
+     * フィールド [suffix] の値を設定します。
      *
-     * 項目の型 [java.lang.String]<br>
-     * クラス名のサフィックスを指定します。
+     * フィールドの説明: [クラス名のサフィックスを指定します。]。
      *
-     * @param argSuffix フィールド[suffix]に格納したい値
+     * @param argSuffix フィールド[suffix]に設定する値。
      */
     public void setSuffix(final String argSuffix) {
         fSuffix = argSuffix;
     }
 
     /**
-     * フィールド[suffix]のゲッターメソッド
+     * フィールド [suffix] の値を取得します。
      *
-     * 項目の型 [java.lang.String]<br>
-     * クラス名のサフィックスを指定します。
+     * フィールドの説明: [クラス名のサフィックスを指定します。]。
      *
-     * @return フィールド[suffix]に格納されている値
+     * @return フィールド[suffix]から取得した値。
      */
     public String getSuffix() {
         return fSuffix;
     }
 
     /**
-     * フィールド [access]のセッターメソッド
+     * フィールド [access] の値を設定します。
      *
-     * 項目の型 [java.lang.String]<br>
-     * クラスのアクセス。通常は public。
+     * フィールドの説明: [クラスのアクセス。通常は public。]。
      *
-     * @param argAccess フィールド[access]に格納したい値
+     * @param argAccess フィールド[access]に設定する値。
      */
     public void setAccess(final String argAccess) {
         fAccess = argAccess;
     }
 
     /**
-     * フィールド[access]のゲッターメソッド
+     * フィールド [access] の値を取得します。
      *
-     * 項目の型 [java.lang.String]<br>
-     * 規定値   ["public"]<br>
-     * クラスのアクセス。通常は public。
+     * フィールドの説明: [クラスのアクセス。通常は public。]。
+     * デフォルト: ["public"]。
      *
-     * @return フィールド[access]に格納されている値
+     * @return フィールド[access]から取得した値。
      */
     public String getAccess() {
         return fAccess;
     }
 
     /**
-     * フィールド [abstract]のセッターメソッド
+     * フィールド [abstract] の値を設定します。
      *
-     * 項目の型 [boolean]<br>
-     * 抽象クラスかどうか。通常は false。
+     * フィールドの説明: [抽象クラスかどうか。通常は false。]。
      *
-     * @param argAbstract フィールド[abstract]に格納したい値
+     * @param argAbstract フィールド[abstract]に設定する値。
      */
     public void setAbstract(final boolean argAbstract) {
         fAbstract = argAbstract;
     }
 
     /**
-     * フィールド[abstract]のゲッターメソッド
+     * フィールド [abstract] の値を取得します。
      *
-     * 項目の型 [boolean]<br>
-     * 規定値   [false]<br>
-     * 抽象クラスかどうか。通常は false。
+     * フィールドの説明: [抽象クラスかどうか。通常は false。]。
+     * デフォルト: [false]。
      *
-     * @return フィールド[abstract]に格納されている値
+     * @return フィールド[abstract]から取得した値。
      */
     public boolean getAbstract() {
         return fAbstract;
     }
 
     /**
-     * フィールド [adjustConstValue]のセッターメソッド
+     * フィールド [adjustConstValue] の値を設定します。
      *
-     * 項目の型 [boolean]<br>
-     * 定数値の変形をおこなうかどうか。※なるべく変形を利用しないことを推奨したい。※プログラムAPIとして生成する際には、このフィールドを明示的に設定してください。
+     * フィールドの説明: [定数値の変形をおこなうかどうか。※なるべく変形を利用しないことを推奨したい。※プログラムAPIとして生成する際には、このフィールドを明示的に設定してください。]。
      *
-     * @param argAdjustConstValue フィールド[adjustConstValue]に格納したい値
+     * @param argAdjustConstValue フィールド[adjustConstValue]に設定する値。
      */
     public void setAdjustConstValue(final boolean argAdjustConstValue) {
         fAdjustConstValue = argAdjustConstValue;
     }
 
     /**
-     * フィールド[adjustConstValue]のゲッターメソッド
+     * フィールド [adjustConstValue] の値を取得します。
      *
-     * 項目の型 [boolean]<br>
-     * 規定値   [true]<br>
-     * 定数値の変形をおこなうかどうか。※なるべく変形を利用しないことを推奨したい。※プログラムAPIとして生成する際には、このフィールドを明示的に設定してください。
+     * フィールドの説明: [定数値の変形をおこなうかどうか。※なるべく変形を利用しないことを推奨したい。※プログラムAPIとして生成する際には、このフィールドを明示的に設定してください。]。
+     * デフォルト: [true]。
      *
-     * @return フィールド[adjustConstValue]に格納されている値
+     * @return フィールド[adjustConstValue]から取得した値。
      */
     public boolean getAdjustConstValue() {
         return fAdjustConstValue;
     }
 
     /**
-     * フィールド [extends]のセッターメソッド
+     * フィールド [extends] の値を設定します。
      *
-     * 項目の型 [java.lang.String]<br>
-     * 継承するクラスを指定します。
+     * フィールドの説明: [継承するクラスを指定します。]。
      *
-     * @param argExtends フィールド[extends]に格納したい値
+     * @param argExtends フィールド[extends]に設定する値。
      */
     public void setExtends(final String argExtends) {
         fExtends = argExtends;
     }
 
     /**
-     * フィールド[extends]のゲッターメソッド
+     * フィールド [extends] の値を取得します。
      *
-     * 項目の型 [java.lang.String]<br>
-     * 継承するクラスを指定します。
+     * フィールドの説明: [継承するクラスを指定します。]。
      *
-     * @return フィールド[extends]に格納されている値
+     * @return フィールド[extends]から取得した値。
      */
     public String getExtends() {
         return fExtends;
     }
 
     /**
-     * フィールド [fieldList]のセッターメソッド
+     * フィールド [fieldList] の値を設定します。
      *
-     * 項目の型 [java.util.List<blanco.constants.valueobject.BlancoConstantsFieldStructure>]<br>
-     * フィールドを保持するリスト。
+     * フィールドの説明: [フィールドを保持するリスト。]。
      *
-     * @param argFieldList フィールド[fieldList]に格納したい値
+     * @param argFieldList フィールド[fieldList]に設定する値。
      */
     public void setFieldList(final List<blanco.constants.valueobject.BlancoConstantsFieldStructure> argFieldList) {
         fFieldList = argFieldList;
     }
 
     /**
-     * フィールド[fieldList]のゲッターメソッド
+     * フィールド [fieldList] の値を取得します。
      *
-     * 項目の型 [java.util.List<blanco.constants.valueobject.BlancoConstantsFieldStructure>]<br>
-     * 規定値   [new java.util.ArrayList<blanco.constants.valueobject.BlancoConstantsFieldStructure>()]<br>
-     * フィールドを保持するリスト。
+     * フィールドの説明: [フィールドを保持するリスト。]。
+     * デフォルト: [new java.util.ArrayList<blanco.constants.valueobject.BlancoConstantsFieldStructure>()]。
      *
-     * @return フィールド[fieldList]に格納されている値
+     * @return フィールド[fieldList]から取得した値。
      */
     public List<blanco.constants.valueobject.BlancoConstantsFieldStructure> getFieldList() {
         return fFieldList;
@@ -308,10 +281,15 @@ public class BlancoConstantsStructure {
     /**
      * このバリューオブジェクトの文字列表現を取得します。
      *
-     * オブジェクトのシャロー範囲でしかtoStringされない点に注意して利用してください。
+     * <P>使用上の注意</P>
+     * <UL>
+     * <LI>オブジェクトのシャロー範囲のみ文字列化の処理対象となります。
+     * <LI>オブジェクトが循環参照している場合には、このメソッドは使わないでください。
+     * </UL>
      *
      * @return バリューオブジェクトの文字列表現。
      */
+    @Override
     public String toString() {
         final StringBuffer buf = new StringBuffer();
         buf.append("blanco.constants.valueobject.BlancoConstantsStructure[");
@@ -326,5 +304,60 @@ public class BlancoConstantsStructure {
         buf.append(",fieldList=" + fFieldList);
         buf.append("]");
         return buf.toString();
+    }
+
+    /**
+     * このバリューオブジェクトを指定のターゲットに複写します。
+     *
+     * <P>使用上の注意</P>
+     * <UL>
+     * <LI>オブジェクトのシャロー範囲のみ複写処理対象となります。
+     * <LI>オブジェクトが循環参照している場合には、このメソッドは使わないでください。
+     * </UL>
+     *
+     * @param target target value object.
+     */
+    public void copyTo(final BlancoConstantsStructure target) {
+        if (target == null) {
+            throw new IllegalArgumentException("Bug: BlancoConstantsStructure#copyTo(target): argument 'target' is null");
+        }
+
+        // No needs to copy parent class.
+
+        // Name: fName
+        // Type: java.lang.String
+        target.fName = this.fName;
+        // Name: fPackage
+        // Type: java.lang.String
+        target.fPackage = this.fPackage;
+        // Name: fDescription
+        // Type: java.lang.String
+        target.fDescription = this.fDescription;
+        // Name: fSuffix
+        // Type: java.lang.String
+        target.fSuffix = this.fSuffix;
+        // Name: fAccess
+        // Type: java.lang.String
+        target.fAccess = this.fAccess;
+        // Name: fAbstract
+        // Type: boolean
+        target.fAbstract = this.fAbstract;
+        // Name: fAdjustConstValue
+        // Type: boolean
+        target.fAdjustConstValue = this.fAdjustConstValue;
+        // Name: fExtends
+        // Type: java.lang.String
+        target.fExtends = this.fExtends;
+        // Name: fFieldList
+        // Type: java.util.List
+        if (this.fFieldList != null) {
+            final java.util.Iterator<blanco.constants.valueobject.BlancoConstantsFieldStructure> iterator = this.fFieldList.iterator();
+            for (; iterator.hasNext();) {
+                blanco.constants.valueobject.BlancoConstantsFieldStructure loopSource = iterator.next();
+                blanco.constants.valueobject.BlancoConstantsFieldStructure loopTarget = null;
+                // フィールド[generics]はサポート外の型[blanco.constants.valueobject.BlancoConstantsFieldStructure]です。
+                target.fFieldList.add(loopTarget);
+            }
+        }
     }
 }

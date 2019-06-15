@@ -1,6 +1,5 @@
 /*
- * このソースコードは blanco Frameworkによって自動生成されています。
- * リソースバンドル定義書から作成されたリソースバンドルクラス。
+ * このソースコードは blanco Frameworkにより自動生成されました。
  */
 package blanco.constants.message;
 
@@ -10,8 +9,9 @@ import java.util.MissingResourceException;
 import java.util.ResourceBundle;
 
 /**
- * リソースバンドル定義[BlancoConstantsMessage/メッセージ定義[BlancoConstants]が内部的に利用するリソースバンドルクラス。]のリソースバンドルクラス。
+ * メッセージ定義[BlancoConstants]が内部的に利用するリソースバンドルクラス。
  *
+ * リソースバンドル定義: [BlancoConstantsMessage]。<BR>
  * このクラスはリソースバンドル定義書から自動生成されたリソースバンドルクラスです。<BR>
  */
 class BlancoConstantsMessageResourceBundle {

@@ -58,4 +58,12 @@ public class BlancoConstantsProcessImpl implements BlancoConstantsProcess {
             throw new IOException("XML変換の過程で例外が発生しました: " + e.toString());
         }
     }
+
+    /**
+     * {@inheritDoc}
+     */
+    public boolean progress(final String argProgressMessage) {
+        System.out.println(argProgressMessage);
+        return false;
+    }
 }

@@ -1,6 +1,5 @@
 /*
- * このソースコードは blanco Frameworkによって自動生成されています。
- * Apache Antタスク [BlancoConstants]のクラス
+ * このソースコードは blanco Frameworkにより自動生成されました。
  */
 package blanco.constants.task;
 
@@ -33,22 +32,22 @@ public class BlancoConstantsTask extends Task {
     protected BlancoConstantsProcessInput fInput = new BlancoConstantsProcessInput();
 
     /**
-     * 定数定義書から定数クラスを自動生成するためのAntTaskです。
+     * フィールド [metadir] に値がセットされたかどうか。
      */
     protected boolean fIsFieldMetadirProcessed = false;
 
     /**
-     * 定数定義書から定数クラスを自動生成するためのAntTaskです。
+     * フィールド [targetdir] に値がセットされたかどうか。
      */
     protected boolean fIsFieldTargetdirProcessed = false;
 
     /**
-     * 定数定義書から定数クラスを自動生成するためのAntTaskです。
+     * フィールド [tmpdir] に値がセットされたかどうか。
      */
     protected boolean fIsFieldTmpdirProcessed = false;
 
     /**
-     * 定数定義書から定数クラスを自動生成するためのAntTaskです。
+     * フィールド [encoding] に値がセットされたかどうか。
      */
     protected boolean fIsFieldEncodingProcessed = false;
 
@@ -178,6 +177,7 @@ public class BlancoConstantsTask extends Task {
      *
      * @throws BuildException タスクとしての例外が発生した場合。
      */
+    @Override
     public final void execute() throws BuildException {
         System.out.println("BlancoConstantsTask begin.");
 

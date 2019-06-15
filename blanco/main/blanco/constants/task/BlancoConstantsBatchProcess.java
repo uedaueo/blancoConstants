@@ -1,5 +1,5 @@
 /*
- * このソースコードは blanco Frameworkによって自動生成されています。
+ * このソースコードは blanco Frameworkにより自動生成されました。
  */
 package blanco.constants.task;
 
@@ -10,7 +10,7 @@ import blanco.constants.task.valueobject.BlancoConstantsProcessInput;
 /**
  * バッチ処理クラス [BlancoConstantsBatchProcess]。
  *
- * バッチ処理の呼び出し例。
+ * <P>バッチ処理の呼び出し例。</P>
  * <code>
  * java -classpath (クラスパス) blanco.constants.task.BlancoConstantsBatchProcess -help
  * </code>

@@ -8,160 +8,145 @@ package blanco.constants.valueobject;
  */
 public class BlancoConstantsFieldStructure {
     /**
-     * フィールド [no]
-     *
-     * 項目の型 [java.lang.String]<br>
      * 項目番号
+     *
+     * フィールド: [no]。
      */
     private String fNo;
 
     /**
-     * フィールド [name]
-     *
-     * 項目の型 [java.lang.String]<br>
      * フィールド名を指定します。必須項目です。
+     *
+     * フィールド: [name]。
      */
     private String fName;
 
     /**
-     * フィールド [type]
-     *
-     * 項目の型 [java.lang.String]<br>
      * 型名をパッケージ名のフル修飾付で指定します。必須項目です。
+     *
+     * フィールド: [type]。
      */
     private String fType;
 
     /**
-     * フィールド [value]
-     *
-     * 項目の型 [java.lang.String]<br>
      * 値を指定します。
+     *
+     * フィールド: [value]。
      */
     private String fValue;
 
     /**
-     * フィールド [description]
-     *
-     * 項目の型 [java.lang.String]<br>
      * フィールドのJavaDocを指定します。
+     *
+     * フィールド: [description]。
      */
     private String fDescription;
 
     /**
-     * フィールド [no]のセッターメソッド
+     * フィールド [no] の値を設定します。
      *
-     * 項目の型 [java.lang.String]<br>
-     * 項目番号
+     * フィールドの説明: [項目番号]。
      *
-     * @param argNo フィールド[no]に格納したい値
+     * @param argNo フィールド[no]に設定する値。
      */
     public void setNo(final String argNo) {
         fNo = argNo;
     }
 
     /**
-     * フィールド[no]のゲッターメソッド
+     * フィールド [no] の値を取得します。
      *
-     * 項目の型 [java.lang.String]<br>
-     * 項目番号
+     * フィールドの説明: [項目番号]。
      *
-     * @return フィールド[no]に格納されている値
+     * @return フィールド[no]から取得した値。
      */
     public String getNo() {
         return fNo;
     }
 
     /**
-     * フィールド [name]のセッターメソッド
+     * フィールド [name] の値を設定します。
      *
-     * 項目の型 [java.lang.String]<br>
-     * フィールド名を指定します。必須項目です。
+     * フィールドの説明: [フィールド名を指定します。必須項目です。]。
      *
-     * @param argName フィールド[name]に格納したい値
+     * @param argName フィールド[name]に設定する値。
      */
     public void setName(final String argName) {
         fName = argName;
     }
 
     /**
-     * フィールド[name]のゲッターメソッド
+     * フィールド [name] の値を取得します。
      *
-     * 項目の型 [java.lang.String]<br>
-     * フィールド名を指定します。必須項目です。
+     * フィールドの説明: [フィールド名を指定します。必須項目です。]。
      *
-     * @return フィールド[name]に格納されている値
+     * @return フィールド[name]から取得した値。
      */
     public String getName() {
         return fName;
     }
 
     /**
-     * フィールド [type]のセッターメソッド
+     * フィールド [type] の値を設定します。
      *
-     * 項目の型 [java.lang.String]<br>
-     * 型名をパッケージ名のフル修飾付で指定します。必須項目です。
+     * フィールドの説明: [型名をパッケージ名のフル修飾付で指定します。必須項目です。]。
      *
-     * @param argType フィールド[type]に格納したい値
+     * @param argType フィールド[type]に設定する値。
      */
     public void setType(final String argType) {
         fType = argType;
     }
 
     /**
-     * フィールド[type]のゲッターメソッド
+     * フィールド [type] の値を取得します。
      *
-     * 項目の型 [java.lang.String]<br>
-     * 型名をパッケージ名のフル修飾付で指定します。必須項目です。
+     * フィールドの説明: [型名をパッケージ名のフル修飾付で指定します。必須項目です。]。
      *
-     * @return フィールド[type]に格納されている値
+     * @return フィールド[type]から取得した値。
      */
     public String getType() {
         return fType;
     }
 
     /**
-     * フィールド [value]のセッターメソッド
+     * フィールド [value] の値を設定します。
      *
-     * 項目の型 [java.lang.String]<br>
-     * 値を指定します。
+     * フィールドの説明: [値を指定します。]。
      *
-     * @param argValue フィールド[value]に格納したい値
+     * @param argValue フィールド[value]に設定する値。
      */
     public void setValue(final String argValue) {
         fValue = argValue;
     }
 
     /**
-     * フィールド[value]のゲッターメソッド
+     * フィールド [value] の値を取得します。
      *
-     * 項目の型 [java.lang.String]<br>
-     * 値を指定します。
+     * フィールドの説明: [値を指定します。]。
      *
-     * @return フィールド[value]に格納されている値
+     * @return フィールド[value]から取得した値。
      */
     public String getValue() {
         return fValue;
     }
 
     /**
-     * フィールド [description]のセッターメソッド
+     * フィールド [description] の値を設定します。
      *
-     * 項目の型 [java.lang.String]<br>
-     * フィールドのJavaDocを指定します。
+     * フィールドの説明: [フィールドのJavaDocを指定します。]。
      *
-     * @param argDescription フィールド[description]に格納したい値
+     * @param argDescription フィールド[description]に設定する値。
      */
     public void setDescription(final String argDescription) {
         fDescription = argDescription;
     }
 
     /**
-     * フィールド[description]のゲッターメソッド
+     * フィールド [description] の値を取得します。
      *
-     * 項目の型 [java.lang.String]<br>
-     * フィールドのJavaDocを指定します。
+     * フィールドの説明: [フィールドのJavaDocを指定します。]。
      *
-     * @return フィールド[description]に格納されている値
+     * @return フィールド[description]から取得した値。
      */
     public String getDescription() {
         return fDescription;
@@ -170,10 +155,15 @@ public class BlancoConstantsFieldStructure {
     /**
      * このバリューオブジェクトの文字列表現を取得します。
      *
-     * オブジェクトのシャロー範囲でしかtoStringされない点に注意して利用してください。
+     * <P>使用上の注意</P>
+     * <UL>
+     * <LI>オブジェクトのシャロー範囲のみ文字列化の処理対象となります。
+     * <LI>オブジェクトが循環参照している場合には、このメソッドは使わないでください。
+     * </UL>
      *
      * @return バリューオブジェクトの文字列表現。
      */
+    @Override
     public String toString() {
         final StringBuffer buf = new StringBuffer();
         buf.append("blanco.constants.valueobject.BlancoConstantsFieldStructure[");
@@ -184,5 +174,40 @@ public class BlancoConstantsFieldStructure {
         buf.append(",description=" + fDescription);
         buf.append("]");
         return buf.toString();
+    }
+
+    /**
+     * このバリューオブジェクトを指定のターゲットに複写します。
+     *
+     * <P>使用上の注意</P>
+     * <UL>
+     * <LI>オブジェクトのシャロー範囲のみ複写処理対象となります。
+     * <LI>オブジェクトが循環参照している場合には、このメソッドは使わないでください。
+     * </UL>
+     *
+     * @param target target value object.
+     */
+    public void copyTo(final BlancoConstantsFieldStructure target) {
+        if (target == null) {
+            throw new IllegalArgumentException("Bug: BlancoConstantsFieldStructure#copyTo(target): argument 'target' is null");
+        }
+
+        // No needs to copy parent class.
+
+        // Name: fNo
+        // Type: java.lang.String
+        target.fNo = this.fNo;
+        // Name: fName
+        // Type: java.lang.String
+        target.fName = this.fName;
+        // Name: fType
+        // Type: java.lang.String
+        target.fType = this.fType;
+        // Name: fValue
+        // Type: java.lang.String
+        target.fValue = this.fValue;
+        // Name: fDescription
+        // Type: java.lang.String
+        target.fDescription = this.fDescription;
     }
 }

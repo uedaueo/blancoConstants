@@ -8,166 +8,151 @@ package blanco.constants.task.valueobject;
  */
 public class BlancoConstantsProcessInput {
     /**
-     * フィールド [verbose]
-     *
-     * 項目の型 [boolean]<br>
-     * 規定値   [false]<br>
      * verboseモードで動作させるかどうか。
+     *
+     * フィールド: [verbose]。
+     * デフォルト: [false]。
      */
     private boolean fVerbose = false;
 
     /**
-     * フィールド [metadir]
-     *
-     * 項目の型 [java.lang.String]<br>
      * メタディレクトリ。xlsファイルの格納先または xmlファイルの格納先を指定します。
+     *
+     * フィールド: [metadir]。
      */
     private String fMetadir;
 
     /**
-     * フィールド [targetdir]
-     *
-     * 項目の型 [java.lang.String]<br>
-     * 規定値   [blanco]<br>
      * 出力先フォルダを指定します。無指定の場合にはカレント直下のblancoを用います。
+     *
+     * フィールド: [targetdir]。
+     * デフォルト: [blanco]。
      */
     private String fTargetdir = "blanco";
 
     /**
-     * フィールド [tmpdir]
-     *
-     * 項目の型 [java.lang.String]<br>
-     * 規定値   [tmp]<br>
      * テンポラリディレクトリを指定します。無指定の場合にはカレント直下のtmpを用います。
+     *
+     * フィールド: [tmpdir]。
+     * デフォルト: [tmp]。
      */
     private String fTmpdir = "tmp";
 
     /**
-     * フィールド [encoding]
-     *
-     * 項目の型 [java.lang.String]<br>
      * 自動生成するソースファイルの文字エンコーディングを指定します。
+     *
+     * フィールド: [encoding]。
      */
     private String fEncoding;
 
     /**
-     * フィールド [verbose]のセッターメソッド
+     * フィールド [verbose] の値を設定します。
      *
-     * 項目の型 [boolean]<br>
-     * verboseモードで動作させるかどうか。
+     * フィールドの説明: [verboseモードで動作させるかどうか。]。
      *
-     * @param argVerbose フィールド[verbose]に格納したい値
+     * @param argVerbose フィールド[verbose]に設定する値。
      */
     public void setVerbose(final boolean argVerbose) {
         fVerbose = argVerbose;
     }
 
     /**
-     * フィールド[verbose]のゲッターメソッド
+     * フィールド [verbose] の値を取得します。
      *
-     * 項目の型 [boolean]<br>
-     * 規定値   [false]<br>
-     * verboseモードで動作させるかどうか。
+     * フィールドの説明: [verboseモードで動作させるかどうか。]。
+     * デフォルト: [false]。
      *
-     * @return フィールド[verbose]に格納されている値
+     * @return フィールド[verbose]から取得した値。
      */
     public boolean getVerbose() {
         return fVerbose;
     }
 
     /**
-     * フィールド [metadir]のセッターメソッド
+     * フィールド [metadir] の値を設定します。
      *
-     * 項目の型 [java.lang.String]<br>
-     * メタディレクトリ。xlsファイルの格納先または xmlファイルの格納先を指定します。
+     * フィールドの説明: [メタディレクトリ。xlsファイルの格納先または xmlファイルの格納先を指定します。]。
      *
-     * @param argMetadir フィールド[metadir]に格納したい値
+     * @param argMetadir フィールド[metadir]に設定する値。
      */
     public void setMetadir(final String argMetadir) {
         fMetadir = argMetadir;
     }
 
     /**
-     * フィールド[metadir]のゲッターメソッド
+     * フィールド [metadir] の値を取得します。
      *
-     * 項目の型 [java.lang.String]<br>
-     * メタディレクトリ。xlsファイルの格納先または xmlファイルの格納先を指定します。
+     * フィールドの説明: [メタディレクトリ。xlsファイルの格納先または xmlファイルの格納先を指定します。]。
      *
-     * @return フィールド[metadir]に格納されている値
+     * @return フィールド[metadir]から取得した値。
      */
     public String getMetadir() {
         return fMetadir;
     }
 
     /**
-     * フィールド [targetdir]のセッターメソッド
+     * フィールド [targetdir] の値を設定します。
      *
-     * 項目の型 [java.lang.String]<br>
-     * 出力先フォルダを指定します。無指定の場合にはカレント直下のblancoを用います。
+     * フィールドの説明: [出力先フォルダを指定します。無指定の場合にはカレント直下のblancoを用います。]。
      *
-     * @param argTargetdir フィールド[targetdir]に格納したい値
+     * @param argTargetdir フィールド[targetdir]に設定する値。
      */
     public void setTargetdir(final String argTargetdir) {
         fTargetdir = argTargetdir;
     }
 
     /**
-     * フィールド[targetdir]のゲッターメソッド
+     * フィールド [targetdir] の値を取得します。
      *
-     * 項目の型 [java.lang.String]<br>
-     * 規定値   [blanco]<br>
-     * 出力先フォルダを指定します。無指定の場合にはカレント直下のblancoを用います。
+     * フィールドの説明: [出力先フォルダを指定します。無指定の場合にはカレント直下のblancoを用います。]。
+     * デフォルト: [blanco]。
      *
-     * @return フィールド[targetdir]に格納されている値
+     * @return フィールド[targetdir]から取得した値。
      */
     public String getTargetdir() {
         return fTargetdir;
     }
 
     /**
-     * フィールド [tmpdir]のセッターメソッド
+     * フィールド [tmpdir] の値を設定します。
      *
-     * 項目の型 [java.lang.String]<br>
-     * テンポラリディレクトリを指定します。無指定の場合にはカレント直下のtmpを用います。
+     * フィールドの説明: [テンポラリディレクトリを指定します。無指定の場合にはカレント直下のtmpを用います。]。
      *
-     * @param argTmpdir フィールド[tmpdir]に格納したい値
+     * @param argTmpdir フィールド[tmpdir]に設定する値。
      */
     public void setTmpdir(final String argTmpdir) {
         fTmpdir = argTmpdir;
     }
 
     /**
-     * フィールド[tmpdir]のゲッターメソッド
+     * フィールド [tmpdir] の値を取得します。
      *
-     * 項目の型 [java.lang.String]<br>
-     * 規定値   [tmp]<br>
-     * テンポラリディレクトリを指定します。無指定の場合にはカレント直下のtmpを用います。
+     * フィールドの説明: [テンポラリディレクトリを指定します。無指定の場合にはカレント直下のtmpを用います。]。
+     * デフォルト: [tmp]。
      *
-     * @return フィールド[tmpdir]に格納されている値
+     * @return フィールド[tmpdir]から取得した値。
      */
     public String getTmpdir() {
         return fTmpdir;
     }
 
     /**
-     * フィールド [encoding]のセッターメソッド
+     * フィールド [encoding] の値を設定します。
      *
-     * 項目の型 [java.lang.String]<br>
-     * 自動生成するソースファイルの文字エンコーディングを指定します。
+     * フィールドの説明: [自動生成するソースファイルの文字エンコーディングを指定します。]。
      *
-     * @param argEncoding フィールド[encoding]に格納したい値
+     * @param argEncoding フィールド[encoding]に設定する値。
      */
     public void setEncoding(final String argEncoding) {
         fEncoding = argEncoding;
     }
 
     /**
-     * フィールド[encoding]のゲッターメソッド
+     * フィールド [encoding] の値を取得します。
      *
-     * 項目の型 [java.lang.String]<br>
-     * 自動生成するソースファイルの文字エンコーディングを指定します。
+     * フィールドの説明: [自動生成するソースファイルの文字エンコーディングを指定します。]。
      *
-     * @return フィールド[encoding]に格納されている値
+     * @return フィールド[encoding]から取得した値。
      */
     public String getEncoding() {
         return fEncoding;
@@ -176,10 +161,15 @@ public class BlancoConstantsProcessInput {
     /**
      * このバリューオブジェクトの文字列表現を取得します。
      *
-     * オブジェクトのシャロー範囲でしかtoStringされない点に注意して利用してください。
+     * <P>使用上の注意</P>
+     * <UL>
+     * <LI>オブジェクトのシャロー範囲のみ文字列化の処理対象となります。
+     * <LI>オブジェクトが循環参照している場合には、このメソッドは使わないでください。
+     * </UL>
      *
      * @return バリューオブジェクトの文字列表現。
      */
+    @Override
     public String toString() {
         final StringBuffer buf = new StringBuffer();
         buf.append("blanco.constants.task.valueobject.BlancoConstantsProcessInput[");
@@ -190,5 +180,40 @@ public class BlancoConstantsProcessInput {
         buf.append(",encoding=" + fEncoding);
         buf.append("]");
         return buf.toString();
+    }
+
+    /**
+     * このバリューオブジェクトを指定のターゲットに複写します。
+     *
+     * <P>使用上の注意</P>
+     * <UL>
+     * <LI>オブジェクトのシャロー範囲のみ複写処理対象となります。
+     * <LI>オブジェクトが循環参照している場合には、このメソッドは使わないでください。
+     * </UL>
+     *
+     * @param target target value object.
+     */
+    public void copyTo(final BlancoConstantsProcessInput target) {
+        if (target == null) {
+            throw new IllegalArgumentException("Bug: BlancoConstantsProcessInput#copyTo(target): argument 'target' is null");
+        }
+
+        // No needs to copy parent class.
+
+        // Name: fVerbose
+        // Type: boolean
+        target.fVerbose = this.fVerbose;
+        // Name: fMetadir
+        // Type: java.lang.String
+        target.fMetadir = this.fMetadir;
+        // Name: fTargetdir
+        // Type: java.lang.String
+        target.fTargetdir = this.fTargetdir;
+        // Name: fTmpdir
+        // Type: java.lang.String
+        target.fTmpdir = this.fTmpdir;
+        // Name: fEncoding
+        // Type: java.lang.String
+        target.fEncoding = this.fEncoding;
     }
 }
