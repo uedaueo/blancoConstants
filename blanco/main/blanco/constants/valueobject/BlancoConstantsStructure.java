@@ -1,6 +1,3 @@
-/*
- * このソースコードは blanco Frameworkにより自動生成されました。
- */
 package blanco.constants.valueobject;
 
 import java.util.List;
@@ -41,7 +38,7 @@ public class BlancoConstantsStructure {
      * クラスのアクセス。通常は public。
      *
      * フィールド: [access]。
-     * デフォルト: ["public"]。
+     * デフォルト: [&quot;public&quot;]。
      */
     private String fAccess = "public";
 
@@ -72,7 +69,7 @@ public class BlancoConstantsStructure {
      * フィールドを保持するリスト。
      *
      * フィールド: [fieldList]。
-     * デフォルト: [new java.util.ArrayList<blanco.constants.valueobject.BlancoConstantsFieldStructure>()]。
+     * デフォルト: [new java.util.ArrayList&lt;blanco.constants.valueobject.BlancoConstantsFieldStructure&gt;()]。
      */
     private List<blanco.constants.valueobject.BlancoConstantsFieldStructure> fFieldList = new java.util.ArrayList<blanco.constants.valueobject.BlancoConstantsFieldStructure>();
 
@@ -179,7 +176,7 @@ public class BlancoConstantsStructure {
      * フィールド [access] の値を取得します。
      *
      * フィールドの説明: [クラスのアクセス。通常は public。]。
-     * デフォルト: ["public"]。
+     * デフォルト: [&quot;public&quot;]。
      *
      * @return フィールド[access]から取得した値。
      */
@@ -270,7 +267,7 @@ public class BlancoConstantsStructure {
      * フィールド [fieldList] の値を取得します。
      *
      * フィールドの説明: [フィールドを保持するリスト。]。
-     * デフォルト: [new java.util.ArrayList<blanco.constants.valueobject.BlancoConstantsFieldStructure>()]。
+     * デフォルト: [new java.util.ArrayList&lt;blanco.constants.valueobject.BlancoConstantsFieldStructure&gt;()]。
      *
      * @return フィールド[fieldList]から取得した値。
      */

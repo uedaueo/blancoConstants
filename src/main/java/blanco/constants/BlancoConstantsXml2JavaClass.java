@@ -1,7 +1,7 @@
 /*
  * blanco Framework
  * Copyright (C) 2004-2005 IGA Tosiki
- * 
+ *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
  * License as published by the Free Software Foundation; either
@@ -27,9 +27,9 @@ import blanco.constants.valueobject.BlancoConstantsStructure;
 
 /**
  * 中間XMLファイルからJavaソースコードを自動生成するクラスです。
- * 
+ *
  * 定数定義書(XLS)からソースコードを自動生成するプロジェクトの一部です。
- * 
+ *
  * @author IGA Tosiki
  */
 public class BlancoConstantsXml2JavaClass {
@@ -68,8 +68,19 @@ public class BlancoConstantsXml2JavaClass {
     }
 
     /**
+     * ソースコード生成先ディレクトリのスタイル
+     */
+    private boolean fTargetStyleAdvanced = false;
+    public void setTargetStyleAdvanced(boolean argTargetStyleAdvanced) {
+        this.fTargetStyleAdvanced = argTargetStyleAdvanced;
+    }
+    public boolean isTargetStyleAdvanced() {
+        return this.fTargetStyleAdvanced;
+    }
+
+    /**
      * 中間XMLファイルからJavaソースコードを自動生成します。
-     * 
+     *
      * @param argMetaXmlSourceFile
      *            ValueObjectに関するメタ情報が含まれているXMLファイル
      * @param argDirectoryTarget
@@ -89,7 +100,7 @@ public class BlancoConstantsXml2JavaClass {
 
     /**
      * 収集された情報を元に、Javaソースコードを出力します。
-     * 
+     *
      * @param processStructure
      *            処理構造
      * @param directoryTarget
@@ -99,9 +110,19 @@ public class BlancoConstantsXml2JavaClass {
             final BlancoConstantsStructure processStructure,
             final File directoryTarget) {
 
-        // 従来と互換性を持たせるため、/mainサブフォルダに出力します。
-        final File fileBlancoMain = new File(directoryTarget.getAbsolutePath()
-                + "/main");
+        /*
+         * 出力ディレクトリはant taskのtargetStyel引数で
+         * 指定された書式で出力されます。
+         * 従来と互換性を保つために、指定がない場合は blanco/main
+         * となります。
+         * by tueda, 2019/08/30
+         */
+        String strTarget = directoryTarget
+                .getAbsolutePath(); // advanced
+        if (!this.isTargetStyleAdvanced()) {
+            strTarget += "/main"; // legacy
+        }
+        final File fileBlancoMain = new File(strTarget);
 
         fCgFactory = BlancoCgObjectFactory.getInstance();
         fCgSourceFile = fCgFactory.createSourceFile(processStructure

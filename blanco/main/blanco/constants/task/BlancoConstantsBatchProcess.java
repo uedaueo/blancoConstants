@@ -1,6 +1,3 @@
-/*
- * このソースコードは blanco Frameworkにより自動生成されました。
- */
 package blanco.constants.task;
 
 import java.io.IOException;
@@ -64,6 +61,10 @@ public class BlancoConstantsBatchProcess {
                 input.setTmpdir(arg.substring(8));
             } else if (arg.startsWith("-encoding=")) {
                 input.setEncoding(arg.substring(10));
+            } else if (arg.startsWith("-targetStyle=")) {
+                input.setTargetStyle(arg.substring(13));
+            } else if (arg.startsWith("-lineSeparator=")) {
+                input.setLineSeparator(arg.substring(15));
             } else if (arg.equals("-?") || arg.equals("-help")) {
                 usage();
                 System.exit(END_SUCCESS);
@@ -157,7 +158,7 @@ public class BlancoConstantsBatchProcess {
      */
     public static final void usage() {
         System.out.println("BlancoConstantsBatchProcess: Usage:");
-        System.out.println("  java blanco.constants.task.BlancoConstantsBatchProcess -verbose=値1 -metadir=値2 -targetdir=値3 -tmpdir=値4 -encoding=値5");
+        System.out.println("  java blanco.constants.task.BlancoConstantsBatchProcess -verbose=値1 -metadir=値2 -targetdir=値3 -tmpdir=値4 -encoding=値5 -targetStyle=値6 -lineSeparator=値7");
         System.out.println("    -verbose");
         System.out.println("      説明[verboseモードで動作させるかどうか。]");
         System.out.println("      型[真偽]");
@@ -177,6 +178,14 @@ public class BlancoConstantsBatchProcess {
         System.out.println("    -encoding");
         System.out.println("      説明[自動生成するソースファイルの文字エンコーディングを指定します。]");
         System.out.println("      型[文字列]");
+        System.out.println("    -targetStyle");
+        System.out.println("      説明[出力先フォルダの書式を指定します。<br>\nblanco: [targetdir]/main<br>\nmaven: [targetdir]/main/java<br>\nfree: [targetdir](targetdirが無指定の場合はblanco/main)]");
+        System.out.println("      型[文字列]");
+        System.out.println("      デフォルト値[blanco]");
+        System.out.println("    -lineSeparator");
+        System.out.println("      説明[行末記号をしていします。LF=0x0a, CR=0x0d, CFLF=0x0d0x0a とします。LFがデフォルトです。]");
+        System.out.println("      型[文字列]");
+        System.out.println("      デフォルト値[LF]");
         System.out.println("    -? , -help");
         System.out.println("      説明[使い方を表示します。]");
     }
