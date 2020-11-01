@@ -1,7 +1,7 @@
 /*
  * blanco Framework
  * Copyright (C) 2004-2007 IGA Tosiki
- * 
+ *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
  * License as published by the Free Software Foundation; either
@@ -13,10 +13,12 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
+import blanco.commons.util.BlancoNameUtil;
 import blanco.commons.util.BlancoStringUtil;
 import blanco.constants.message.BlancoConstantsMessage;
 import blanco.constants.valueobject.BlancoConstantsFieldStructure;
 import blanco.constants.valueobject.BlancoConstantsStructure;
+import blanco.valueobject.valueobject.BlancoValueObjectClassStructure;
 import blanco.xml.bind.BlancoXmlBindingUtil;
 import blanco.xml.bind.BlancoXmlUnmarshaller;
 import blanco.xml.bind.valueobject.BlancoXmlDocument;
@@ -24,7 +26,7 @@ import blanco.xml.bind.valueobject.BlancoXmlElement;
 
 /**
  * blancoConstantsの 中間XMLファイル形式をパース(読み書き)するクラス。
- * 
+ *
  * @author IGA Tosiki
  */
 public class BlancoConstantsXmlParser {
@@ -35,7 +37,7 @@ public class BlancoConstantsXmlParser {
 
     /**
      * 中間XMLファイルのXMLドキュメントをパースして、バリューオブジェクト情報の配列を取得します。
-     * 
+     *
      * @param argMetaXmlSourceFile
      *            中間XMLファイル。
      * @return パースの結果得られたバリューオブジェクト情報の配列。
@@ -53,7 +55,7 @@ public class BlancoConstantsXmlParser {
 
     /**
      * 中間XMLファイル形式のXMLドキュメントをパースして、バリューオブジェクト情報の配列を取得します。
-     * 
+     *
      * @param argXmlDocument
      *            中間XMLファイルのXMLドキュメント。
      * @return パースの結果得られたバリューオブジェクト情報の配列。
@@ -93,7 +95,7 @@ public class BlancoConstantsXmlParser {
 
     /**
      * 中間XMLファイル形式の「sheet」XMLエレメントをパースして、バリューオブジェクト情報を取得します。
-     * 
+     *
      * @param argElementSheet
      *            中間XMLファイルの「sheet」XMLエレメント。
      * @return パースの結果得られたバリューオブジェクト情報。「name」が見つからなかった場合には nullを戻します。
@@ -126,6 +128,13 @@ public class BlancoConstantsXmlParser {
         objClassStructure
                 .setFieldList(new ArrayList<blanco.constants.valueobject.BlancoConstantsFieldStructure>());
 
+        /* クラスの annotation に対応 */
+        String classAnnotation = BlancoXmlBindingUtil.getTextContent(
+                elementCommon, "annotation");
+        if (BlancoStringUtil.null2Blank(classAnnotation).length() > 0) {
+            objClassStructure.setAnnotationList(createAnnotaionList(classAnnotation));
+        }
+
         if (BlancoStringUtil.null2Blank(objClassStructure.getName()).trim()
                 .length() == 0) {
             // 名前が無いものはスキップします。
@@ -144,6 +153,14 @@ public class BlancoConstantsXmlParser {
             final BlancoXmlElement elementExtendsRoot = extendsList.get(0);
             objClassStructure.setExtends(BlancoXmlBindingUtil.getTextContent(
                     elementExtendsRoot, "name"));
+        }
+
+        /* import の一覧作成 */
+        List<BlancoXmlElement> importList = BlancoXmlBindingUtil
+                .getElementsByTagName(argElementSheet, "blancoconstants-import");
+        if (importList != null && importList.size() != 0) {
+            final BlancoXmlElement elementImportRoot = importList.get(0);
+            parseImportList(elementImportRoot, objClassStructure);
         }
 
         final List<blanco.xml.bind.valueobject.BlancoXmlElement> listList = BlancoXmlBindingUtil
@@ -196,5 +213,57 @@ public class BlancoConstantsXmlParser {
         }
 
         return objClassStructure;
+    }
+
+    /**
+     * import の一覧作成
+     * @param argElementImportRoot
+     * @param argClassStructure
+     */
+    private void parseImportList(
+            final BlancoXmlElement argElementImportRoot,
+            final BlancoConstantsStructure argClassStructure
+    ) {
+        final List<BlancoXmlElement> listImportChildNodes = BlancoXmlBindingUtil
+                .getElementsByTagName(argElementImportRoot, "import");
+        for (int index = 0; index < listImportChildNodes.size(); index++) {
+            final BlancoXmlElement elementList = listImportChildNodes
+                    .get(index);
+
+            final String importName = BlancoXmlBindingUtil
+                    .getTextContent(elementList, "name");
+//            System.out.println("/* tueda */ import = " + importName);
+            if (importName == null || importName.trim().length() == 0) {
+                continue;
+            }
+            argClassStructure.getImportList().add(
+                    BlancoXmlBindingUtil
+                            .getTextContent(elementList, "name"));
+        }
+    }
+
+    private List<String> createAnnotaionList(String annotations) {
+        List<String> annotationList = new ArrayList<String>();
+        final String[] lines = BlancoNameUtil.splitString(annotations, '\n');
+        StringBuffer sb = new StringBuffer();
+        for (String line : lines) {
+            if (line.startsWith("@")) {
+                if (sb.length() > 0) {
+                    annotationList.add(sb.toString());
+                    sb = new StringBuffer();
+                }
+                line = line.substring(1);
+            }
+            sb.append(line + System.getProperty("line.separator", "\n"));
+        }
+        if (sb.length() > 0) {
+            annotationList.add(sb.toString());
+        }
+//        if (this.isVerbose()) {
+//            for (String ann : annotationList) {
+//                System.out.println("Ann: " + ann);
+//            }
+//        }
+        return annotationList;
     }
 }

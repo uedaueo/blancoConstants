@@ -18,6 +18,9 @@
         <propertykey name="suffix" waitX="2">
           <value>サフィックス</value>
         </propertykey>
+        <propertykey name="annotation" waitX="2">
+          <value>アノテーション</value>
+        </propertykey>
         <propertykey name="access" waitX="2">
           <value>アクセス</value>
         </propertykey>
@@ -40,6 +43,18 @@
           <value>クラス名</value>
         </propertykey>
       </propertyblock>
+
+      <tableblock name="blancoconstants-import" waitY="2" titleheight="2" rowname="import">
+        <startstring>定数定義・インポート</startstring>
+
+        <tablecolumn name="no">
+          <value>No.</value>
+        </tablecolumn>
+        <tablecolumn name="name">
+          <value>インポートクラス名</value>
+        </tablecolumn>
+
+      </tableblock>
 
       <tableblock name="blancoconstants-list" waitY="2" titleheight="3" rowname="field">
         <startstring>定数定義・一覧</startstring>

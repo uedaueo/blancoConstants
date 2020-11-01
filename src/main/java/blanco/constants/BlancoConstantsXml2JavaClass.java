@@ -11,6 +11,7 @@ package blanco.constants;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.List;
 
 import blanco.cg.BlancoCgObjectFactory;
 import blanco.cg.transformer.BlancoCgTransformerFactory;
@@ -142,6 +143,22 @@ public class BlancoConstantsXml2JavaClass {
         if (BlancoStringUtil.null2Blank(processStructure.getExtends()).length() > 0) {
             fCgClass.getExtendClassList().add(
                     fCgFactory.createType(processStructure.getExtends()));
+        }
+
+        /* クラスのannotation を設定します */
+        List annotationList = processStructure.getAnnotationList();
+        if (annotationList != null && annotationList.size() > 0) {
+            fCgClass.getAnnotationList().addAll(processStructure.getAnnotationList());
+            /* tueda DEBUG */
+            System.out.println("/* tueda */ structure2Source : class annotation = " + processStructure.getAnnotationList().get(0));
+        }
+
+        /* クラスの import を設定します */
+        for (int index = 0; index < processStructure.getImportList()
+                .size(); index++) {
+            final String imported = (String) processStructure.getImportList()
+                    .get(index);
+            fCgSourceFile.getImportList().add(imported);
         }
 
         for (int indexField = 0; indexField < processStructure.getFieldList()

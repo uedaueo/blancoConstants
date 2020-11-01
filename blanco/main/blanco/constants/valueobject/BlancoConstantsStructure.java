@@ -35,6 +35,22 @@ public class BlancoConstantsStructure {
     private String fSuffix;
 
     /**
+     * クラスのアノテーションを指定します。
+     *
+     * フィールド: [annotationList]。
+     * デフォルト: [new java.util.ArrayList&lt;java.lang.String&gt;()]。
+     */
+    private List<String> fAnnotationList = new java.util.ArrayList<java.lang.String>();
+
+    /**
+     * importを指定します。
+     *
+     * フィールド: [importList]。
+     * デフォルト: [new java.util.ArrayList&lt;java.lang.String&gt;()]。
+     */
+    private List<String> fImportList = new java.util.ArrayList<java.lang.String>();
+
+    /**
      * クラスのアクセス。通常は public。
      *
      * フィールド: [access]。
@@ -71,7 +87,7 @@ public class BlancoConstantsStructure {
      * フィールド: [fieldList]。
      * デフォルト: [new java.util.ArrayList&lt;blanco.constants.valueobject.BlancoConstantsFieldStructure&gt;()]。
      */
-    private List<blanco.constants.valueobject.BlancoConstantsFieldStructure> fFieldList = new java.util.ArrayList<blanco.constants.valueobject.BlancoConstantsFieldStructure>();
+    private List<BlancoConstantsFieldStructure> fFieldList = new java.util.ArrayList<blanco.constants.valueobject.BlancoConstantsFieldStructure>();
 
     /**
      * フィールド [name] の値を設定します。
@@ -159,6 +175,52 @@ public class BlancoConstantsStructure {
      */
     public String getSuffix() {
         return fSuffix;
+    }
+
+    /**
+     * フィールド [annotationList] の値を設定します。
+     *
+     * フィールドの説明: [クラスのアノテーションを指定します。]。
+     *
+     * @param argAnnotationList フィールド[annotationList]に設定する値。
+     */
+    public void setAnnotationList(final List<String> argAnnotationList) {
+        fAnnotationList = argAnnotationList;
+    }
+
+    /**
+     * フィールド [annotationList] の値を取得します。
+     *
+     * フィールドの説明: [クラスのアノテーションを指定します。]。
+     * デフォルト: [new java.util.ArrayList&lt;java.lang.String&gt;()]。
+     *
+     * @return フィールド[annotationList]から取得した値。
+     */
+    public List<String> getAnnotationList() {
+        return fAnnotationList;
+    }
+
+    /**
+     * フィールド [importList] の値を設定します。
+     *
+     * フィールドの説明: [importを指定します。]。
+     *
+     * @param argImportList フィールド[importList]に設定する値。
+     */
+    public void setImportList(final List<String> argImportList) {
+        fImportList = argImportList;
+    }
+
+    /**
+     * フィールド [importList] の値を取得します。
+     *
+     * フィールドの説明: [importを指定します。]。
+     * デフォルト: [new java.util.ArrayList&lt;java.lang.String&gt;()]。
+     *
+     * @return フィールド[importList]から取得した値。
+     */
+    public List<String> getImportList() {
+        return fImportList;
     }
 
     /**
@@ -259,7 +321,7 @@ public class BlancoConstantsStructure {
      *
      * @param argFieldList フィールド[fieldList]に設定する値。
      */
-    public void setFieldList(final List<blanco.constants.valueobject.BlancoConstantsFieldStructure> argFieldList) {
+    public void setFieldList(final List<BlancoConstantsFieldStructure> argFieldList) {
         fFieldList = argFieldList;
     }
 
@@ -271,7 +333,7 @@ public class BlancoConstantsStructure {
      *
      * @return フィールド[fieldList]から取得した値。
      */
-    public List<blanco.constants.valueobject.BlancoConstantsFieldStructure> getFieldList() {
+    public List<BlancoConstantsFieldStructure> getFieldList() {
         return fFieldList;
     }
 
@@ -294,6 +356,8 @@ public class BlancoConstantsStructure {
         buf.append(",package=" + fPackage);
         buf.append(",description=" + fDescription);
         buf.append(",suffix=" + fSuffix);
+        buf.append(",annotationList=" + fAnnotationList);
+        buf.append(",importList=" + fImportList);
         buf.append(",access=" + fAccess);
         buf.append(",abstract=" + fAbstract);
         buf.append(",adjustConstValue=" + fAdjustConstValue);
@@ -333,6 +397,12 @@ public class BlancoConstantsStructure {
         // Name: fSuffix
         // Type: java.lang.String
         target.fSuffix = this.fSuffix;
+        // Name: fAnnotationList
+        // Type: java.util.List
+        // フィールド[fAnnotationList]はサポート外の型[java.util.Listjava.lang.String]です。
+        // Name: fImportList
+        // Type: java.util.List
+        // フィールド[fImportList]はサポート外の型[java.util.Listjava.lang.String]です。
         // Name: fAccess
         // Type: java.lang.String
         target.fAccess = this.fAccess;
@@ -347,14 +417,6 @@ public class BlancoConstantsStructure {
         target.fExtends = this.fExtends;
         // Name: fFieldList
         // Type: java.util.List
-        if (this.fFieldList != null) {
-            final java.util.Iterator<blanco.constants.valueobject.BlancoConstantsFieldStructure> iterator = this.fFieldList.iterator();
-            for (; iterator.hasNext();) {
-                blanco.constants.valueobject.BlancoConstantsFieldStructure loopSource = iterator.next();
-                blanco.constants.valueobject.BlancoConstantsFieldStructure loopTarget = null;
-                // フィールド[generics]はサポート外の型[blanco.constants.valueobject.BlancoConstantsFieldStructure]です。
-                target.fFieldList.add(loopTarget);
-            }
-        }
+        // フィールド[fFieldList]はサポート外の型[java.util.Listblanco.constants.valueobject.BlancoConstantsFieldStructure]です。
     }
 }
